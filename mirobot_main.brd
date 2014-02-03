@@ -109,7 +109,7 @@
 <text x="28.575" y="16.764" size="1.778" layer="25">-</text>
 <text x="27.559" y="29.972" size="1.016" layer="25" rot="R180">USB</text>
 <text x="23.114" y="29.972" size="1.016" layer="25" rot="R180">BATT</text>
-<text x="27.94" y="53.594" size="1.27" layer="25" rot="R180">Mirobot v1.3</text>
+<text x="27.94" y="53.594" size="1.27" layer="25" rot="R180">Mirobot v1.4</text>
 <text x="47.244" y="53.594" size="1.27" layer="25" rot="R180">Ben Pirt 2014</text>
 <text x="49.911" y="18.288" size="0.8128" layer="25" rot="R90">BLACK</text>
 <text x="32.639" y="18.034" size="0.8128" layer="25" rot="R90">GREEN</text>
@@ -218,30 +218,6 @@ Based on the following sources:&lt;p&gt;
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
 <package name="1X10">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="7.62" y1="0.635" x2="8.255" y2="1.27" width="0.1524" layer="21"/>
@@ -738,6 +714,30 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <text x="-3.429" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.429" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.143" y="0" drill="1.016" shape="offset" rot="R180"/>
+<pad name="2" x="1.143" y="0" drill="1.016" shape="offset"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -984,7 +984,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.385" y="28.067" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="32.385" y="23.368" size="0.6096" layer="27" ratio="10"/>
 </element>
-<element name="JP6" library="pinhead" package="1X02" value="Battery" x="27.635" y="19.936" smashed="yes">
+<element name="JP6" library="Child-Friendly-Parts" package="1X02" value="Battery" x="27.635" y="19.936" smashed="yes">
 <attribute name="VALUE" x="25.4" y="21.717" size="1.016" layer="27"/>
 </element>
 <element name="JP5" library="Child-Friendly-Parts" package="2X03" value="PowerSelect" x="23.876" y="34.036" smashed="yes" rot="R180">
@@ -1459,7 +1459,7 @@ design rules under a new name.</description>
 <wire x1="21.336" y1="32.639" x2="21.336" y2="30.988" width="0.8128" layer="1"/>
 <wire x1="21.336" y1="30.988" x2="23.876" y2="28.448" width="0.8128" layer="1"/>
 <wire x1="23.876" y1="28.448" x2="23.876" y2="22.425" width="0.8128" layer="1"/>
-<wire x1="23.876" y1="22.425" x2="26.365" y2="19.936" width="0.8128" layer="1"/>
+<wire x1="23.876" y1="22.425" x2="26.492" y2="19.936" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R1" pad="2"/>
