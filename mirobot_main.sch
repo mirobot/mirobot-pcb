@@ -12598,6 +12598,30 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-1.778" y="-0.635" size="1.27" layer="51" ratio="10">O</text>
 <text x="0.635" y="-0.635" size="1.27" layer="51" ratio="10">I</text>
 </package>
+<package name="78MXXS">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<wire x1="-4.826" y1="-4.7498" x2="2.794" y2="-4.7498" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-0.127" x2="4.8006" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="-4.7498" x2="4.8006" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-4.7498" x2="-4.826" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="4.8006" y1="-0.127" x2="4.8006" y2="-2.794" width="0.1524" layer="21"/>
+<circle x="-4.064" y="-3.9878" radius="0.4318" width="0" layer="21"/>
+<pad name="IN" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="OUT" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-4.826" y="-6.477" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.826" y="-8.128" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.508" y="-1.778" size="1.27" layer="51" ratio="10">-</text>
+<text x="-3.048" y="-1.778" size="1.27" layer="51" ratio="10">I</text>
+<text x="2.032" y="-1.778" size="1.27" layer="51" ratio="10">O</text>
+<rectangle x1="3.429" y1="-2.794" x2="4.826" y2="-2.286" layer="21"/>
+<rectangle x1="0.889" y1="-2.794" x2="1.651" y2="-2.286" layer="21"/>
+<rectangle x1="-1.651" y1="-2.794" x2="-0.889" y2="-2.286" layer="21"/>
+<rectangle x1="-4.826" y1="-2.794" x2="-3.429" y2="-2.286" layer="21"/>
+<rectangle x1="-3.429" y1="-2.794" x2="-1.651" y2="-2.286" layer="51"/>
+<rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
+<rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX">
@@ -12627,6 +12651,24 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="1" pin="GND" pad="GND"/>
 <connect gate="1" pin="IN" pad="IN"/>
 <connect gate="1" pin="OUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="78MXXS" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="78MXXS">
+<connects>
+<connect gate="A" pin="GND" pad="GND"/>
+<connect gate="A" pin="IN" pad="IN"/>
+<connect gate="A" pin="OUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15379,7 +15421,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="POWER" library="led" deviceset="LED" device="3MM"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="IC4" library="v-reg" deviceset="78LXX" device="" value="5V"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="050-025X075" value="100n"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -15400,7 +15441,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0204/5" value="470R"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/5" value="1k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="IC5" library="v-reg" deviceset="78LXX" device="" value="3.3V"/>
+<part name="3.3V" library="v-reg" deviceset="78LXX" device="" value="3.3V"/>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
@@ -15409,6 +15450,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="X1" library="con-molex" deviceset="22-23-2051" device=""/>
 <part name="X2" library="con-molex" deviceset="22-23-2051" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
+<part name="5V" library="v-reg" deviceset="78MXXS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15471,7 +15513,6 @@ Source: 008-0260-0_E.pdf</description>
 <attribute name="VALUE" x="40.005" y="74.803" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND19" gate="1" x="-91.44" y="65.405"/>
-<instance part="IC4" gate="1" x="-30.48" y="81.28"/>
 <instance part="C4" gate="G$1" x="-99.06" y="34.671" smashed="yes" rot="R180">
 <attribute name="NAME" x="-100.584" y="34.29" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-100.584" y="39.37" size="1.778" layer="96" rot="R180"/>
@@ -15501,7 +15542,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R1" gate="G$1" x="-12.7" y="-45.72"/>
 <instance part="R2" gate="G$1" x="-5.08" y="-53.34" rot="R90"/>
 <instance part="GND3" gate="1" x="-5.08" y="-63.5"/>
-<instance part="IC5" gate="1" x="73.66" y="81.28"/>
+<instance part="3.3V" gate="1" x="73.66" y="81.28"/>
 <instance part="P+11" gate="1" x="58.42" y="88.9"/>
 <instance part="GND14" gate="1" x="73.66" y="67.945"/>
 <instance part="+3V1" gate="G$1" x="88.9" y="88.9"/>
@@ -15526,6 +15567,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="P+8" gate="1" x="5.08" y="88.9" smashed="yes">
 <attribute name="VALUE" x="6.985" y="91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="5V" gate="A" x="-30.48" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -15589,7 +15631,7 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <wire x1="-30.48" y1="73.66" x2="-30.48" y2="70.485" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="IC4" gate="1" pin="GND"/>
+<pinref part="5V" gate="A" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-43.18" y1="71.755" x2="-43.18" y2="70.485" width="0.1524" layer="91"/>
@@ -15649,7 +15691,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-5.08" y1="-60.96" x2="-5.08" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="1" pin="GND"/>
+<pinref part="3.3V" gate="1" pin="GND"/>
 <wire x1="73.66" y1="73.66" x2="73.66" y2="70.485" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
@@ -15879,8 +15921,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-7.62" y1="86.36" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-15.24" y="81.28"/>
 <pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="IC4" gate="1" pin="OUT"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="5V" gate="A" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="5"/>
@@ -15990,11 +16032,11 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-55.88" y1="79.248" x2="-55.88" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-55.88" y="81.28"/>
 <pinref part="C8" gate="G$1" pin="+"/>
-<pinref part="IC4" gate="1" pin="IN"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-43.18" y1="79.375" x2="-43.18" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-43.18" y="81.28"/>
 <wire x1="-71.12" y1="81.28" x2="-55.88" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="5V" gate="A" pin="IN"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="4"/>
@@ -16003,7 +16045,7 @@ Source: 008-0260-0_E.pdf</description>
 </segment>
 <segment>
 <pinref part="P+11" gate="1" pin="V+"/>
-<pinref part="IC5" gate="1" pin="IN"/>
+<pinref part="3.3V" gate="1" pin="IN"/>
 <wire x1="58.42" y1="86.36" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -16033,7 +16075,7 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="IC5" gate="1" pin="OUT"/>
+<pinref part="3.3V" gate="1" pin="OUT"/>
 <wire x1="81.28" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="81.28" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
