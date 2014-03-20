@@ -965,73 +965,6 @@ Source: avr.lbr</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-molex">
-<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="22-23-2051">
-<description>.100" (2.54mm) Center Header - 5 Pin</description>
-<wire x1="-6.35" y1="3.175" x2="6.35" y2="3.175" width="0.254" layer="21"/>
-<wire x1="6.35" y1="3.175" x2="6.35" y2="1.27" width="0.254" layer="21"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="6.35" y1="-3.175" x2="-6.35" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="-3.175" x2="-6.35" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="1.27" x2="-6.35" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="0" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="4" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="5" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-6.35" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MV">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="M">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="22-23-2051" prefix="X">
-<description>.100" (2.54mm) Center Header - 5 Pin</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="-5" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="22-23-2051">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-<connect gate="-5" pin="S" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="22-23-2051" constant="no"/>
-<attribute name="OC_FARNELL" value="1462952" constant="no"/>
-<attribute name="OC_NEWARK" value="38C9178" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -3163,6 +3096,145 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="usr_wifi">
+<packages>
+<package name="WIFI_MODULE-T">
+<pad name="GND" x="-8" y="0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="+3V3" x="-6" y="-0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="NRELOAD" x="-4" y="0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="EXT_RESET" x="-2" y="-0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="RX" x="0" y="0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="TX" x="2" y="-0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="PWR_SW" x="4" y="0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="PWM_3" x="6" y="-0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="PWM_2" x="8" y="0.1" drill="0.8" shape="long" rot="R90"/>
+<pad name="PWM_1" x="10" y="-0.1" drill="0.8" shape="long" rot="R90"/>
+<wire x1="12" y1="-2" x2="-10" y2="-2" width="0.127" layer="23"/>
+<wire x1="-10" y1="-2" x2="-10" y2="12" width="0.127" layer="23"/>
+<wire x1="-10" y1="12" x2="12" y2="12" width="0.127" layer="23"/>
+<wire x1="12" y1="12" x2="12" y2="-2" width="0.127" layer="23"/>
+</package>
+</packages>
+<symbols>
+<symbol name="WIFI_MODULE-T">
+<pin name="GND" x="-2.54" y="12.7" length="middle" direction="pwr"/>
+<pin name="+3V3" x="-2.54" y="10.16" length="middle" direction="pwr"/>
+<pin name="NRELOAD" x="-2.54" y="7.62" length="middle"/>
+<pin name="EXT_RESET" x="-2.54" y="5.08" length="middle"/>
+<pin name="RX" x="-2.54" y="2.54" length="middle"/>
+<pin name="TX" x="-2.54" y="0" length="middle"/>
+<pin name="PWR_SW" x="-2.54" y="-2.54" length="middle"/>
+<pin name="PWM_3(WPS)" x="-2.54" y="-5.08" length="middle"/>
+<pin name="PWM_2(NREADY)" x="-2.54" y="-7.62" length="middle"/>
+<pin name="PWM_1(NLINK)" x="-2.54" y="-10.16" length="middle"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="25.4" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-12.7" x2="25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USR_WIFI-T">
+<description>USR-WIFI232-T WiFi Module</description>
+<gates>
+<gate name="G$1" symbol="WIFI_MODULE-T" x="-10.16" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WIFI_MODULE-T">
+<connects>
+<connect gate="G$1" pin="+3V3" pad="+3V3"/>
+<connect gate="G$1" pin="EXT_RESET" pad="EXT_RESET"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NRELOAD" pad="NRELOAD"/>
+<connect gate="G$1" pin="PWM_1(NLINK)" pad="PWM_1"/>
+<connect gate="G$1" pin="PWM_2(NREADY)" pad="PWM_2"/>
+<connect gate="G$1" pin="PWM_3(WPS)" pad="PWM_3"/>
+<connect gate="G$1" pin="PWR_SW" pad="PWR_SW"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="custom">
+<packages>
+<package name="5_PIN_STEPPER">
+<description>.100" (2.54mm) Center Header - 5 Pin</description>
+<wire x1="-7.5" y1="2.4" x2="-6.2" y2="2.4" width="0.254" layer="21"/>
+<wire x1="-6.2" y1="2.4" x2="6.3" y2="2.4" width="0.254" layer="21"/>
+<wire x1="6.3" y1="2.4" x2="7.5" y2="2.4" width="0.254" layer="21"/>
+<wire x1="7.5" y1="2.4" x2="7.5" y2="0.8" width="0.254" layer="21"/>
+<wire x1="7.5" y1="0.8" x2="7.5" y2="-3.2" width="0.254" layer="21"/>
+<wire x1="7.5" y1="-3.2" x2="-7.5" y2="-3.2" width="0.254" layer="21"/>
+<wire x1="-7.5" y1="-3.2" x2="-7.5" y2="0.8" width="0.254" layer="21"/>
+<wire x1="-7.5" y1="0.8" x2="-7.5" y2="2.4" width="0.254" layer="21"/>
+<wire x1="-7.5" y1="0.8" x2="-5.4" y2="0.8" width="0.254" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-6.35" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.4" y1="0.8" x2="5.4" y2="0.8" width="0.254" layer="21"/>
+<wire x1="5.4" y1="0.8" x2="6.3" y2="0.8" width="0.254" layer="21"/>
+<wire x1="6.3" y1="0.8" x2="7.5" y2="0.8" width="0.254" layer="21"/>
+<wire x1="-6.2" y1="0.9" x2="-6.2" y2="2.4" width="0.254" layer="21"/>
+<wire x1="-5.4" y1="2.3" x2="-5.4" y2="0.8" width="0.254" layer="21"/>
+<wire x1="6.3" y1="2.4" x2="6.3" y2="0.8" width="0.254" layer="21"/>
+<wire x1="5.4" y1="2.3" x2="5.4" y2="0.8" width="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5_PIN_STEPPER" prefix="X">
+<description>.100" (2.54mm) Center Header - 5 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="5_PIN_STEPPER">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2051" constant="no"/>
+<attribute name="OC_FARNELL" value="1462952" constant="no"/>
+<attribute name="OC_NEWARK" value="38C9178" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3222,13 +3294,13 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="X1" library="con-molex" deviceset="22-23-2051" device=""/>
-<part name="X2" library="con-molex" deviceset="22-23-2051" device=""/>
+<part name="X1" library="custom" deviceset="5_PIN_STEPPER" device=""/>
+<part name="X2" library="custom" deviceset="5_PIN_STEPPER" device=""/>
 <part name="5V" library="v-reg" deviceset="78MXXS" device=""/>
 <part name="USB" library="SparkFun-Connectors" deviceset="M06" device="LOCK_LONGPADS"/>
 <part name="SERVO" library="SparkFun-Connectors" deviceset="M03" device="LOCK_LONGPADS"/>
-<part name="WIFI" library="Child-Friendly-Parts" deviceset="PINHD-2X3" device=""/>
 <part name="EXPANSION" library="pinhead" deviceset="PINHD-1X10" device=""/>
+<part name="U$1" library="usr_wifi" deviceset="USR_WIFI-T" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3313,15 +3385,15 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <instance part="P+3" gate="1" x="45.72" y="50.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="43.18" y="52.705" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND2" gate="1" x="-2.54" y="-55.88"/>
-<instance part="R1" gate="G$1" x="-25.4" y="-45.72"/>
-<instance part="R2" gate="G$1" x="-17.78" y="-53.34" rot="R90"/>
-<instance part="GND3" gate="1" x="-17.78" y="-63.5"/>
+<instance part="GND2" gate="1" x="-10.16" y="-78.74"/>
+<instance part="R1" gate="G$1" x="-43.18" y="-55.88"/>
+<instance part="R2" gate="G$1" x="-35.56" y="-63.5" rot="R90"/>
+<instance part="GND3" gate="1" x="-35.56" y="-73.66"/>
 <instance part="3.3V" gate="1" x="73.66" y="81.28"/>
 <instance part="P+11" gate="1" x="58.42" y="88.9"/>
 <instance part="GND14" gate="1" x="73.66" y="67.945"/>
 <instance part="+3V1" gate="G$1" x="88.9" y="88.9"/>
-<instance part="+3V2" gate="G$1" x="35.56" y="-38.1"/>
+<instance part="+3V2" gate="G$1" x="-15.24" y="-40.64"/>
 <instance part="X1" gate="-1" x="66.04" y="27.94" smashed="yes">
 <attribute name="NAME" x="68.58" y="27.178" size="1.524" layer="95"/>
 <attribute name="VALUE" x="65.278" y="29.337" size="1.778" layer="96"/>
@@ -3341,8 +3413,8 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <instance part="5V" gate="A" x="-30.48" y="81.28"/>
 <instance part="USB" gate="G$1" x="66.04" y="-43.18" rot="R180"/>
 <instance part="SERVO" gate="G$1" x="68.58" y="50.8" rot="R180"/>
-<instance part="WIFI" gate="A" x="7.62" y="-45.72"/>
 <instance part="EXPANSION" gate="A" x="-78.74" y="-48.26"/>
+<instance part="U$1" gate="G$1" x="2.54" y="-58.42"/>
 </instances>
 <busses>
 </busses>
@@ -3457,7 +3529,7 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="-60.96" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-71.12" x2="-35.56" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3.3V" gate="1" pin="GND"/>
@@ -3475,10 +3547,10 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <label x="-91.44" y="-58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="5.08" y1="-43.18" x2="-2.54" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="WIFI" gate="A" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-2.54" y1="-43.18" x2="-2.54" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-45.72" x2="-10.16" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-10.16" y1="-45.72" x2="0" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3720,8 +3792,8 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="-45.72" x2="-35.56" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-36.068" y="-44.958" size="1.778" layer="95" rot="R180"/>
+<wire x1="-48.26" y1="-55.88" x2="-53.34" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-53.848" y="-55.118" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -3736,9 +3808,9 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <pinref part="USB" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="WIFI" gate="A" pin="4"/>
-<wire x1="12.7" y1="-45.72" x2="33.02" y2="-45.72" width="0.1524" layer="91"/>
-<label x="33.02" y="-45.72" size="1.778" layer="95" rot="R180"/>
+<wire x1="0" y1="-58.42" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-17.78" y="-58.42" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$1" gate="G$1" pin="TX"/>
 </segment>
 </net>
 <net name="EXT_RESET" class="0">
@@ -3834,12 +3906,12 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="-45.72" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="0" y1="-55.88" x2="-35.56" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="-45.72" x2="-20.32" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-48.26" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="-17.78" y="-45.72"/>
-<pinref part="WIFI" gate="A" pin="3"/>
+<wire x1="-35.56" y1="-55.88" x2="-38.1" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-58.42" x2="-35.56" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-35.56" y="-55.88"/>
+<pinref part="U$1" gate="G$1" pin="RX"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -3855,10 +3927,10 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <label x="-91.44" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="12.7" y1="-43.18" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="WIFI" gate="A" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="35.56" y1="-43.18" x2="35.56" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-48.26" x2="-15.24" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="+3V3"/>
+<wire x1="-15.24" y1="-48.26" x2="0" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD2" class="0">
@@ -3947,9 +4019,9 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </net>
 <net name="NREADY" class="0">
 <segment>
-<wire x1="5.08" y1="-48.26" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-5.08" y="-48.26" size="1.778" layer="95" rot="R180"/>
-<pinref part="WIFI" gate="A" pin="5"/>
+<wire x1="0" y1="-66.04" x2="-17.78" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-17.78" y="-66.04" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$1" gate="G$1" pin="PWM_2(NREADY)"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="PC5(ADC5/SCL)"/>
@@ -3959,9 +4031,9 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </net>
 <net name="WIFI_RESET" class="0">
 <segment>
-<pinref part="WIFI" gate="A" pin="6"/>
-<wire x1="12.7" y1="-48.26" x2="33.02" y2="-48.26" width="0.1524" layer="91"/>
-<label x="33.02" y="-48.26" size="1.778" layer="95" rot="R180"/>
+<wire x1="0" y1="-53.34" x2="-17.78" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-17.78" y="-50.8" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$1" gate="G$1" pin="EXT_RESET"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="PC4(ADC4/SDA)"/>
@@ -3978,7 +4050,6 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <approved hash="113,1,-30.48,76.6826,5V,,,,,"/>
 <approved hash="113,1,64.1773,-45.9147,USB,,,,,"/>
 <approved hash="113,1,64.1773,49.3353,SERVO,,,,,"/>
-<approved hash="113,1,8.84767,-44.3188,WIFI,,,,,"/>
 <approved hash="113,1,-77.7619,-48.1288,EXPANSION,,,,,"/>
 </errors>
 </schematic>
