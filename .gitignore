@@ -37,6 +37,7 @@ eagle.epf
 *.GTO
 *.GTS
 *.TXT
+*.GPB
 
 *.drd
 *.drd.*
