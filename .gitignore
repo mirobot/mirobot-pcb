@@ -37,7 +37,7 @@ eagle.epf
 *.GTO
 *.GTS
 *.TXT
-*.GPB
+*.GBP
 
 *.drd
 *.drd.*
@@ -45,5 +45,7 @@ eagle.epf
 *.info
 
 *.eps
+
+bmp.scr
 
 *.DS_Store
