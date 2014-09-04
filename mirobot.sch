@@ -923,65 +923,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="Child-Friendly-Parts">
-<packages>
-<package name="1X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.143" y="0" drill="1.016" shape="offset" rot="R180"/>
-<pad name="2" x="1.143" y="0" drill="1.016" shape="offset"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="usr_wifi">
 <packages>
 <package name="WIFI_MODULE-T">
@@ -1106,9 +1047,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="21"/>
 </package>
 <package name="SPDT_SLIDE_SWITCH">
-<pad name="COMMON" x="0" y="0" drill="0.8"/>
-<pad name="SW1" x="-2" y="0" drill="0.8"/>
-<pad name="SW2" x="2" y="0" drill="0.8"/>
+<pad name="COMMON" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="SW1" x="-2" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="SW2" x="2" y="0" drill="0.8" shape="long" rot="R90"/>
 <pad name="GND2" x="4.1" y="0" drill="1.5"/>
 <pad name="GND1" x="-4.1" y="0" drill="1.5"/>
 <wire x1="-4.3" y1="2.2" x2="4.6" y2="2.2" width="0.127" layer="21"/>
@@ -5430,7 +5371,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="JP6" library="Child-Friendly-Parts" deviceset="PINHD-1X2" device="" value="Battery"/>
 <part name="VSS2" library="supply1" deviceset="VSS" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
@@ -5458,7 +5398,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND1" gate="1" x="-88.9" y="8.89"/>
 <instance part="GND19" gate="1" x="10.16" y="40.005"/>
 <instance part="GND8" gate="1" x="50.8" y="43.18"/>
-<instance part="JP6" gate="G$1" x="10.16" y="55.88" rot="R90"/>
 <instance part="VSS2" gate="G$1" x="-35.56" y="55.88" rot="R180"/>
 <instance part="GND2" gate="1" x="-10.16" y="-78.74"/>
 <instance part="+3V2" gate="G$1" x="-15.24" y="-40.64"/>
@@ -5489,7 +5428,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="U$3" gate="G$1" x="-15.24" y="48.26" rot="R180"/>
 <instance part="ULN2803" gate="G$1" x="27.94" y="7.62"/>
 <instance part="GND3" gate="1" x="5.08" y="-22.86"/>
-<instance part="U$4" gate="G$1" x="30.48" y="40.64"/>
+<instance part="U$4" gate="G$1" x="15.24" y="40.64"/>
 <instance part="LOGO1" gate="G$1" x="55.88" y="-33.02"/>
 </instances>
 <busses>
@@ -5503,14 +5442,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="SERVO" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="53.34" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="10.16" y1="43.18" x2="10.16" y2="42.545" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="50.8" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
-<junction x="10.16" y="43.18"/>
+<wire x1="10.16" y1="50.8" x2="10.16" y2="42.545" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -5808,13 +5742,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="COMMON"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="45.72" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VSS"/>
-<wire x1="7.62" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="45.72" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<junction x="7.62" y="45.72"/>
+<wire x1="-7.62" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

@@ -105,8 +105,6 @@
 </layers>
 <board>
 <plain>
-<text x="40.999740625" y="52.81104375" size="1.778" layer="25">+</text>
-<text x="32.808821875" y="52.832153125" size="1.778" layer="25">-</text>
 <text x="52.059153125" y="20.524040625" size="1.27" layer="25">v1.7</text>
 <text x="14.757203125" y="43.693228125" size="1.27" layer="25">Ben Pirt 2014</text>
 <text x="32.490790625" y="42.291" size="0.8128" layer="25" rot="R270">BROWN</text>
@@ -220,34 +218,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 </packages>
 </library>
-<library name="Child-Friendly-Parts">
-<packages>
-<package name="1X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.143" y="0" drill="1.016" shape="offset" rot="R180"/>
-<pad name="2" x="1.143" y="0" drill="1.016" shape="offset"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="usr_wifi">
 <packages>
 <package name="WIFI_MODULE-T">
@@ -327,9 +297,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="21"/>
 </package>
 <package name="SPDT_SLIDE_SWITCH">
-<pad name="COMMON" x="0" y="0" drill="0.8"/>
-<pad name="SW1" x="-2" y="0" drill="0.8"/>
-<pad name="SW2" x="2" y="0" drill="0.8"/>
+<pad name="COMMON" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="SW1" x="-2" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="SW2" x="2" y="0" drill="0.8" shape="long" rot="R90"/>
 <pad name="GND2" x="4.1" y="0" drill="1.5"/>
 <pad name="GND1" x="-4.1" y="0" drill="1.5"/>
 <wire x1="-4.3" y1="2.2" x2="4.6" y2="2.2" width="0.127" layer="21"/>
@@ -2136,9 +2106,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </pass>
 </autorouter>
 <elements>
-<element name="JP6" library="Child-Friendly-Parts" package="1X02" value="Battery" x="37.516" y="51.438" smashed="yes" rot="R180">
-<attribute name="VALUE" x="40.51279375" y="54.313684375" size="1.016" layer="21" rot="R180"/>
-</element>
 <element name="X1" library="custom" package="5_PIN_STEPPER" value="5_PIN_STEPPER" x="34.163" y="21.717" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="38C9178" x="34.163" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="22-23-2051" x="34.163" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2172,7 +2139,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="JP6" pad="2"/>
 <polygon width="0.2" layer="1" isolate="0.254">
 <vertex x="7" y="56.349"/>
 <vertex x="35" y="56.349"/>
@@ -2193,12 +2159,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U$1" pad="GND"/>
 <contactref element="U$2" pad="GND"/>
 <contactref element="U$2" pad="GND2"/>
-<contactref element="U$3" pad="GND1"/>
-<contactref element="U$3" pad="GND2"/>
 <contactref element="ULN2803" pad="9"/>
 <contactref element="EXPANSION" pad="4"/>
 <via x="52.324" y="41.402" extent="1-16" drill="0.6" shape="octagon"/>
 <contactref element="U$4" pad="GND"/>
+<contactref element="U$3" pad="GND1"/>
+<contactref element="U$3" pad="GND2"/>
 </signal>
 <signal name="SERVO">
 <contactref element="SERVO" pad="1"/>
@@ -2448,16 +2414,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="N$6">
 <contactref element="U$3" pad="COMMON"/>
-<contactref element="JP6" pad="1"/>
-<wire x1="38.659" y1="51.438" x2="37.592" y2="50.371" width="0.8128" layer="1"/>
-<wire x1="37.592" y1="50.371" x2="37.592" y2="45.339" width="0.8128" layer="1"/>
 <contactref element="U$4" pad="VSS"/>
 <wire x1="62.627" y1="22.368" x2="62.611" y2="47.752" width="0.8128" layer="1"/>
 <wire x1="62.611" y1="47.752" x2="58.547" y2="51.816" width="0.8128" layer="1"/>
-<wire x1="58.547" y1="51.816" x2="40.259" y2="51.816" width="0.8128" layer="1"/>
-<wire x1="40.259" y1="51.816" x2="40.132" y2="51.435" width="0.8128" layer="1"/>
-<wire x1="40.132" y1="51.435" x2="38.662" y2="51.435" width="0.8128" layer="1"/>
-<wire x1="38.662" y1="51.435" x2="38.659" y2="51.438" width="0.8128" layer="1"/>
+<wire x1="58.547" y1="51.816" x2="42.291" y2="51.816" width="0.8128" layer="1"/>
+<wire x1="42.291" y1="51.816" x2="37.592" y2="47.117" width="0.8128" layer="1"/>
+<wire x1="37.592" y1="47.117" x2="37.592" y2="45.339" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="ULN2803" pad="18"/>
