@@ -119,8 +119,8 @@
 <wire x1="64.516" y1="51.181" x2="61.214" y2="54.737" width="0.2032" layer="20" curve="90"/>
 <wire x1="61.214" y1="54.737" x2="12.446" y2="54.737" width="0.2032" layer="20"/>
 <wire x1="12.446" y1="54.737" x2="8.89" y2="51.181" width="0.2032" layer="20" curve="90"/>
-<text x="60.7481125" y="25.971425" size="1.27" layer="21" ratio="10">ON</text>
-<text x="60.15558125" y="38.523265625" size="1.27" layer="21" ratio="10">OFF</text>
+<text x="60.4941125" y="25.844425" size="1.27" layer="21" ratio="10">ON</text>
+<text x="60.02858125" y="38.523265625" size="1.27" layer="21" ratio="10">OFF</text>
 <text x="44.381496875" y="47.41603125" size="1.27" layer="21" ratio="10">http://mirobot.io</text>
 <text x="58.123584375" y="33.824165625" size="0.8128" layer="25" rot="R270">GND</text>
 <text x="45.677584375" y="33.697165625" size="0.8128" layer="25" rot="R270">GND</text>
@@ -268,10 +268,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="MISO" x="7.62" y="-10.16" drill="0.8" shape="offset" rot="R180"/>
 <pad name="MOSI" x="7.62" y="-12.7" drill="0.8" shape="offset" rot="R180"/>
 <pad name="D10" x="7.62" y="-15.24" drill="0.8" shape="offset" rot="R180"/>
-<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="49"/>
+<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="49"/>
+<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="49"/>
 <wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="21"/>
-<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-16.51" x2="8.89" y2="13.97" width="0.127" layer="21"/>
+<wire x1="8.89" y1="13.97" x2="1.27" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="13.97" x2="-8.89" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="13.97" x2="-8.89" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="1.27" y1="13.97" x2="-1.27" y2="13.97" width="0.127" layer="21" curve="-180"/>
 </package>
 <package name="SPDT_SLIDE_SWITCH">
 <pad name="COMMON" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
@@ -2147,7 +2153,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </element>
 <element name="U$1" library="usr_wifi" package="WIFI_MODULE-T" value="USR_WIFI-T" x="51.816" y="42.291"/>
 <element name="U$2" library="custom" package="ARDUINO_PRO_MINI" value="ARDUINO_PRO_MINI" x="24.765" y="44.958" rot="R90"/>
-<element name="U$3" library="custom" package="SPDT_SLIDE_SWITCH" value="SPDT_SLIDE_SWITCH" x="61.722" y="32.893" rot="R270"/>
+<element name="U$3" library="custom" package="SPDT_SLIDE_SWITCH" value="SPDT_SLIDE_SWITCH" x="61.468" y="32.893" rot="R270"/>
 <element name="ULN2803" library="SparkFun-PowerIC" package="DIL18" value="" x="23.495" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="19.939" y="29.845" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="33.02" y="31.115" size="1.27" layer="27" ratio="10" rot="R180"/>
@@ -2257,12 +2263,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="29.083" y1="20.701" x2="30.734" y2="19.05" width="0.8128" layer="1"/>
 <wire x1="29.083" y1="20.701" x2="29.083" y2="21.717" width="0.8128" layer="1"/>
 <wire x1="41.402" y1="27.813" x2="41.402" y2="24.892" width="0.8128" layer="1"/>
-<wire x1="41.402" y1="24.892" x2="56.769" y2="24.892" width="0.8128" layer="1"/>
-<wire x1="56.769" y1="24.892" x2="58.42" y2="26.543" width="0.8128" layer="1"/>
-<wire x1="58.42" y1="26.543" x2="58.42" y2="29.845" width="0.8128" layer="1"/>
-<wire x1="58.42" y1="29.845" x2="59.436" y2="30.861" width="0.8128" layer="1"/>
+<wire x1="41.402" y1="24.892" x2="57.023" y2="24.892" width="0.8128" layer="1"/>
+<wire x1="57.023" y1="24.892" x2="58.293" y2="26.162" width="0.8128" layer="1"/>
+<wire x1="58.293" y1="26.162" x2="58.293" y2="29.718" width="0.8128" layer="1"/>
+<wire x1="58.293" y1="29.718" x2="59.436" y2="30.861" width="0.8128" layer="1"/>
 <wire x1="59.436" y1="30.861" x2="61.69" y2="30.861" width="0.8128" layer="1"/>
-<wire x1="61.69" y1="30.861" x2="61.722" y2="30.893" width="0.8128" layer="1"/>
+<wire x1="61.69" y1="30.861" x2="61.468" y2="30.893" width="0.8128" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$1" pad="+3V3"/>
@@ -2406,11 +2412,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="N$6">
 <contactref element="U$3" pad="COMMON"/>
 <contactref element="U$4" pad="VSS"/>
-<wire x1="61.722" y1="32.893" x2="60.96" y2="32.893" width="0.8128" layer="16"/>
-<wire x1="60.96" y1="32.893" x2="58.42" y2="30.353" width="0.8128" layer="16"/>
-<wire x1="58.42" y1="30.353" x2="58.42" y2="23.241" width="0.8128" layer="16"/>
-<wire x1="58.42" y1="23.241" x2="58.801" y2="22.86" width="0.8128" layer="16"/>
-<wire x1="58.801" y1="22.86" x2="58.801" y2="22.384" width="0.8128" layer="16"/>
+<wire x1="61.468" y1="32.893" x2="60.96" y2="32.893" width="0.8128" layer="16"/>
+<wire x1="60.96" y1="32.893" x2="58.293" y2="30.226" width="0.8128" layer="16"/>
+<wire x1="58.293" y1="30.226" x2="58.293" y2="23.876" width="0.8128" layer="16"/>
+<wire x1="58.293" y1="23.876" x2="58.801" y2="23.368" width="0.8128" layer="16"/>
+<wire x1="58.801" y1="23.368" x2="58.801" y2="22.384" width="0.8128" layer="16"/>
 <wire x1="58.801" y1="22.384" x2="58.817" y2="22.368" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$1">
