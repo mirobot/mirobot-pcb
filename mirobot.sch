@@ -971,10 +971,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pad name="MISO" x="7.62" y="-10.16" drill="0.8" shape="offset" rot="R180"/>
 <pad name="MOSI" x="7.62" y="-12.7" drill="0.8" shape="offset" rot="R180"/>
 <pad name="D10" x="7.62" y="-15.24" drill="0.8" shape="offset" rot="R180"/>
-<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="49"/>
-<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="49"/>
-<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="49"/>
-<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="23"/>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="23"/>
+<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="23"/>
+<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="23"/>
 <wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-16.51" x2="8.89" y2="13.97" width="0.127" layer="21"/>
 <wire x1="8.89" y1="13.97" x2="1.27" y2="13.97" width="0.127" layer="21"/>

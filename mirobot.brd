@@ -268,10 +268,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="MISO" x="7.62" y="-10.16" drill="0.8" shape="offset" rot="R180"/>
 <pad name="MOSI" x="7.62" y="-12.7" drill="0.8" shape="offset" rot="R180"/>
 <pad name="D10" x="7.62" y="-15.24" drill="0.8" shape="offset" rot="R180"/>
-<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="49"/>
-<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="49"/>
-<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="49"/>
-<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="23"/>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="23"/>
+<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="23"/>
+<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="23"/>
 <wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-16.51" x2="8.89" y2="13.97" width="0.127" layer="21"/>
 <wire x1="8.89" y1="13.97" x2="1.27" y2="13.97" width="0.127" layer="21"/>
@@ -2159,7 +2159,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VALUE" x="33.02" y="31.115" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U$4" library="custom" package="BATTERY_PACK" value="BATTERY_PACK" x="59.817" y="23.368" rot="MR180"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="25.4" y="44.958"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="26.162" y="44.704"/>
 <element name="U$5" library="custom" package="LOGO" value="" x="52.533553125" y="50.729796875"/>
 <element name="LINE" library="Child-Friendly-Parts" package="1X04" value="" x="52.578" y="32.639" smashed="yes">
 <attribute name="NAME" x="51.562" y="35.687" size="1.27" layer="25" ratio="10" rot="R180"/>
