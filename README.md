@@ -1,4 +1,4 @@
 mirobot-pcb
 ===========
 
-This repository contains the Eagle CAD files for the Mirobot PCB.
+This repository contains the KiCad files for the V2 Mirobot PCB.
