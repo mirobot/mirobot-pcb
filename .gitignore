@@ -50,3 +50,14 @@ eagle.epf
 bmp.scr
 
 *.DS_Store
+
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.zip
+*/output/*
+*/release/*
+*_autosave*

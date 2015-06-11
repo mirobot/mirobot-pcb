@@ -1,0 +1,181 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mirobot
+LIBS:Adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_PRO_MINI_BASIC IC1
+U 1 1 55787321
+P 6325 3450
+F 0 "IC1" H 6775 4250 60  0000 C CNN
+F 1 "ARDUINO_PRO_MINI_BASIC" V 6325 3400 60  0000 C CNN
+F 2 "Mirobot:ARDUINO_PRO_MINI" H 6325 3450 60  0001 C CNN
+F 3 "" H 6325 3450 60  0000 C CNN
+	1    6325 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P1
+U 1 1 5578734A
+P 3200 3650
+F 0 "P1" H 3200 4000 50  0000 C CNN
+F 1 "CONN_01X06" V 3300 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 3200 3650 60  0001 C CNN
+F 3 "" H 3200 3650 60  0000 C CNN
+	1    3200 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3900 3400 3900
+Wire Wire Line
+	4700 2300 4700 4250
+Wire Wire Line
+	3550 3350 5475 3350
+Wire Wire Line
+	4700 2850 5475 2850
+Connection ~ 4700 3350
+Wire Wire Line
+	4500 2950 5475 2950
+Wire Wire Line
+	3400 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 4150
+Wire Wire Line
+	4800 4150 5475 4150
+Wire Wire Line
+	3400 3500 4900 3500
+Wire Wire Line
+	4900 3500 4900 4250
+Wire Wire Line
+	4900 4250 5475 4250
+Wire Wire Line
+	7500 3150 7125 3150
+Wire Wire Line
+	7500 2200 7500 3150
+$Comp
+L GND #PWR01
+U 1 1 55787742
+P 4700 4250
+F 0 "#PWR01" H 4700 4000 60  0001 C CNN
+F 1 "GND" H 4700 4100 60  0000 C CNN
+F 2 "" H 4700 4250 60  0000 C CNN
+F 3 "" H 4700 4250 60  0000 C CNN
+	1    4700 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3900
+$Comp
+L GND #PWR02
+U 1 1 557877D5
+P 8250 1875
+F 0 "#PWR02" H 8250 1625 60  0001 C CNN
+F 1 "GND" H 8250 1725 60  0000 C CNN
+F 2 "" H 8250 1875 60  0000 C CNN
+F 3 "" H 8250 1875 60  0000 C CNN
+	1    8250 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 557877E6
+P 8250 1725
+F 0 "#FLG03" H 8250 1820 30  0001 C CNN
+F 1 "PWR_FLAG" H 8250 1905 30  0000 C CNN
+F 2 "" H 8250 1725 60  0000 C CNN
+F 3 "" H 8250 1725 60  0000 C CNN
+	1    8250 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1725 8250 1875
+$Comp
+L SWITCH_SPDT SW1
+U 1 1 557878D6
+P 4100 2950
+F 0 "SW1" H 4100 3200 60  0000 C CNN
+F 1 "SWITCH_SPDT" H 4140 2700 59  0000 C CNN
+F 2 "Mirobot:SMALL_SLIDE_SWITCH" H 4100 2950 60  0001 C CNN
+F 3 "" H 4100 2950 60  0000 C CNN
+	1    4100 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3700 3700 3700
+Wire Wire Line
+	3700 3700 3700 3050
+$Comp
+L SWITCH_SPDT SW2
+U 1 1 557876A1
+P 6150 2300
+F 0 "SW2" H 6150 2550 60  0000 C CNN
+F 1 "SWITCH_SPDT" H 6190 2050 59  0000 C CNN
+F 2 "Mirobot:SMALL_SLIDE_SWITCH" H 6150 2300 60  0001 C CNN
+F 3 "" H 6150 2300 60  0000 C CNN
+	1    6150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2200 7500 2200
+$Comp
+L CONN_01X02 P2
+U 1 1 5578A9D8
+P 3200 2900
+F 0 "P2" H 3200 3050 50  0000 C CNN
+F 1 "CONN_01X02" V 3300 2900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3200 2900 60  0001 C CNN
+F 3 "" H 3200 2900 60  0000 C CNN
+	1    3200 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2850 3700 2850
+Connection ~ 4700 2850
+Wire Wire Line
+	4700 2300 5750 2300
+Wire Wire Line
+	3400 2950 3550 2950
+Wire Wire Line
+	3550 2950 3550 3350
+$EndSCHEMATC

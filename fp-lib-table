@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Mirobot)(type Github)(uri https://github.com/bjpirt/mirobot-kicad.pretty)(options "")(descr ""))
-)
