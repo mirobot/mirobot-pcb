@@ -1,8 +1,9 @@
-(module Fiducial (layer F.Cu) (tedit 55786629)
-  (fp_text reference Fiducial (at 0 2.286) (layer F.SilkS)
+(module Fiducial (layer F.Cu) (tedit 55AE74F5)
+  (attr smd)
+  (fp_text reference REF** (at 0 2.286) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value FID** (at 0 -2.54) (layer F.SilkS)
+  (fp_text value VAL** (at 0 -2.54) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 smd circle (at 0 0) (size 1 1) (layers F.Cu F.Mask)
