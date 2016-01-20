@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Mirobot-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -365,7 +365,7 @@ F 3 "" H 5575 5575 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L R-RESCUE-Mirobot R3
 U 1 1 5576AA05
 P 5250 5275
 F 0 "R3" V 5330 5275 50  0000 C CNN
@@ -376,7 +376,7 @@ F 3 "" H 5250 5275 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L R-RESCUE-Mirobot R1
 U 1 1 5576ACE8
 P 3075 4675
 F 0 "R1" V 3155 4675 50  0000 C CNN
@@ -387,7 +387,7 @@ F 3 "" H 3075 4675 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L R-RESCUE-Mirobot R2
 U 1 1 5576D812
 P 5250 5075
 F 0 "R2" V 5330 5075 50  0000 C CNN
