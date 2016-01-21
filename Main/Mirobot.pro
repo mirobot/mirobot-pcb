@@ -1,4 +1,4 @@
-update=Tuesday, 12 January 2016 'pmt' 13:31:52
+update=Wednesday, 20 January 2016 'amt' 08:29:36
 version=1
 last_client=kicad
 [cvpcb]
@@ -44,7 +44,6 @@ LibName9=cmos4000
 LibName10=adc-dac
 LibName11=memory
 LibName12=xilinx
-LibName13=special
 LibName14=microcontrollers
 LibName15=dsp
 LibName16=microchip
@@ -64,3 +63,13 @@ LibName29=atmel
 LibName30=contrib
 LibName31=valves
 LibName32=mirobot
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
