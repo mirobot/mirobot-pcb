@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Mirobot-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -11,24 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:mirobot
 LIBS:Mirobot-cache
 EELAYER 25 0
@@ -79,10 +60,10 @@ F 3 "" H 8300 4125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR15
+L GND #PWR015
 U 1 1 56A00C21
 P 5600 4425
-F 0 "#PWR15" H 5600 4175 60  0001 C CNN
+F 0 "#PWR015" H 5600 4175 60  0001 C CNN
 F 1 "GND" H 5600 4275 60  0000 C CNN
 F 2 "" H 5600 4425 60  0000 C CNN
 F 3 "" H 5600 4425 60  0000 C CNN
@@ -90,10 +71,10 @@ F 3 "" H 5600 4425 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VSS #PWR16
+L VSS #PWR016
 U 1 1 56A00C27
 P 7275 4475
-F 0 "#PWR16" H 7275 4325 60  0001 C CNN
+F 0 "#PWR016" H 7275 4325 60  0001 C CNN
 F 1 "VSS" H 7275 4625 60  0000 C CNN
 F 2 "" H 7275 4475 60  0000 C CNN
 F 3 "" H 7275 4475 60  0000 C CNN
@@ -106,13 +87,11 @@ U 1 1 56A00C2D
 P 4500 3725
 F 0 "U4" H 4650 4325 50  0000 C CNN
 F 1 "74HC595" H 4500 3125 50  0000 C CNN
-F 2 "" H 4500 3725 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 4500 3725 50  0001 C CNN
 F 3 "" H 4500 3725 50  0000 C CNN
 	1    4500 3725
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3675 3575
-NoConn ~ 3675 3775
 NoConn ~ 5325 4175
 Wire Wire Line
 	7150 3275 7200 3275
@@ -203,15 +182,41 @@ Wire Wire Line
 Wire Wire Line
 	3800 3475 3525 3475
 Wire Wire Line
-	3800 3575 3675 3575
+	2875 3575 3800 3575
 Wire Wire Line
-	3800 3775 3675 3775
+	3800 3775 3525 3775
 Wire Wire Line
 	5200 4175 5325 4175
 Text HLabel 3525 3275 0    60   Input ~ 0
 SR_DATA
 Text HLabel 3525 3475 0    60   Input ~ 0
 SR_CLK
-Text HLabel 3525 3875 0    60   Input ~ 0
+Text HLabel 3525 3775 0    60   Input ~ 0
 SR_LATCH
+Wire Wire Line
+	2875 3575 2875 3100
+$Comp
+L +3V3 #PWR?
+U 1 1 56AB51FA
+P 2875 3100
+F 0 "#PWR?" H 2875 2950 60  0001 C CNN
+F 1 "+3V3" H 2875 3240 60  0000 C CNN
+F 2 "" H 2875 3100 60  0000 C CNN
+F 3 "" H 2875 3100 60  0000 C CNN
+	1    2875 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 3875 3525 4425
+$Comp
+L GND #PWR?
+U 1 1 56AB52F9
+P 3525 4425
+F 0 "#PWR?" H 3525 4175 60  0001 C CNN
+F 1 "GND" H 3525 4275 60  0000 C CNN
+F 2 "" H 3525 4425 60  0000 C CNN
+F 3 "" H 3525 4425 60  0000 C CNN
+	1    3525 4425
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
