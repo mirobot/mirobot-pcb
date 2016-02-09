@@ -1,4 +1,4 @@
-update=Tuesday, 02 February 2016 'pmt' 17:26:06
+update=Friday, 05 February 2016 'pmt' 16:59:58
 version=1
 last_client=kicad
 [cvpcb]
@@ -28,16 +28,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -54,3 +44,13 @@ LibName9=adc-dac
 LibName10=memory
 LibName11=xilinx
 LibName12=/Users/bjpirt/Documents/custom-kicad-libs/custom-symbols
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

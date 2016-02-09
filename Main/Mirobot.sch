@@ -10,7 +10,7 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:mirobot
+LIBS:custom-symbols
 LIBS:Mirobot-cache
 EELAYER 25 0
 EELAYER END
@@ -32,8 +32,11 @@ U 1 1 54E21EA6
 P 6375 4900
 F 0 "PEN1" H 6375 5100 50  0000 C CNN
 F 1 "SERVO" V 6475 4900 50  0000 C CNN
-F 2 "Mirobot:Pin_Header_Staggered_1x03" H 6375 4900 60  0001 C CNN
+F 2 "Custom:Pin_Header_Staggered_1x03" H 6375 4900 60  0001 C CNN
 F 3 "" H 6375 4900 60  0000 C CNN
+F 4 "3 Pin 2.54mm Male header" H 6375 4900 60  0001 C CNN "Description"
+F 5 "Generic" H 6375 4900 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "y" H 6375 4900 60  0001 C CNN "Required"
 	1    6375 4900
 	1    0    0    -1  
 $EndComp
@@ -65,8 +68,11 @@ U 1 1 54E71B6E
 P 7875 4850
 F 0 "SG1" H 8075 4800 60  0000 C CNN
 F 1 "BUZZER" H 7875 5150 60  0000 C CNN
-F 2 "Mirobot:BUZZER" H 7875 4850 60  0001 C CNN
+F 2 "Custom:BUZZER" H 7875 4850 60  0001 C CNN
 F 3 "" H 7875 4850 60  0000 C CNN
+F 4 "Small Buzzer" H 7875 4850 60  0001 C CNN "Description"
+F 5 "Generic" H 7875 4850 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "y" H 7875 4850 60  0001 C CNN "Required"
 	1    7875 4850
 	0    1    1    0   
 $EndComp
@@ -87,8 +93,14 @@ U 1 1 55759F48
 P 2775 4925
 F 0 "M1" H 2475 5375 60  0000 C CNN
 F 1 "ESP8266-ESP-12" H 2425 4375 60  0000 L CNN
-F 2 "Mirobot:ESP-07" H 2775 4925 60  0001 C CNN
-F 3 "" H 2775 4925 60  0000 C CNN
+F 2 "Custom:ESP-07" H 2775 4925 60  0001 C CNN
+F 3 "~" H 2775 4925 60  0000 C CNN
+F 4 "ESP-12E Module" H 2775 4925 60  0001 C CNN "Description"
+F 5 "Custom" H 2775 4925 60  0001 C CNN "Package ID"
+F 6 "AI Thinker" H 2775 4925 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "ESP-12E" H 2775 4925 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "http://www.aliexpress.com/item/Free-Shipping-20pcs-lot-ESP8266-remote-serial-Port-WIFI-wireless-module-through-walls-Wang-ESP-12/32256165881.html" H 2775 4925 60  0001 C CNN "Source1"
+F 9 "y" H 2775 4925 60  0001 C CNN "Required"
 	1    2775 4925
 	1    0    0    -1  
 $EndComp
@@ -111,6 +123,10 @@ F 0 "R3" V 3930 5325 50  0000 C CNN
 F 1 "10k" V 3857 5326 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3780 5325 30  0001 C CNN
 F 3 "" H 3850 5325 30  0000 C CNN
+F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
+F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
+F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 3850 5325 60  0001 C CNN "Required"
 	1    3850 5325
 	0    1    1    0   
 $EndComp
@@ -122,6 +138,10 @@ F 0 "R2" V 1930 4275 50  0000 C CNN
 F 1 "10k" V 1857 4276 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1780 4275 30  0001 C CNN
 F 3 "" H 1850 4275 30  0000 C CNN
+F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
+F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
+F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 1850 4275 60  0001 C CNN "Required"
 	1    1850 4275
 	-1   0    0    1   
 $EndComp
@@ -133,6 +153,10 @@ F 0 "R5" V 4380 4575 50  0000 C CNN
 F 1 "10k" V 4307 4576 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4230 4575 30  0001 C CNN
 F 3 "" H 4300 4575 30  0000 C CNN
+F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
+F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
+F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 4300 4575 60  0001 C CNN "Required"
 	1    4300 4575
 	1    0    0    -1  
 $EndComp
@@ -153,8 +177,9 @@ U 1 1 55794270
 P 1025 7200
 F 0 "FID1" H 1025 7025 60  0000 C CNN
 F 1 "Fiducial" H 1025 7375 60  0000 C CNN
-F 2 "Mirobot:Fiducial" H 1025 7200 60  0001 C CNN
+F 2 "Custom:Fiducial" H 1025 7200 60  0001 C CNN
 F 3 "" H 1025 7200 60  0000 C CNN
+F 4 "n" H 1025 7200 60  0001 C CNN "Required"
 	1    1025 7200
 	1    0    0    -1  
 $EndComp
@@ -164,8 +189,9 @@ U 1 1 557942BF
 P 1600 7200
 F 0 "FID2" H 1600 7025 60  0000 C CNN
 F 1 "Fiducial" H 1600 7375 60  0000 C CNN
-F 2 "Mirobot:Fiducial" H 1600 7200 60  0001 C CNN
+F 2 "Custom:Fiducial" H 1600 7200 60  0001 C CNN
 F 3 "" H 1600 7200 60  0000 C CNN
+F 4 "n" H 1600 7200 60  0001 C CNN "Required"
 	1    1600 7200
 	1    0    0    -1  
 $EndComp
@@ -175,41 +201,44 @@ U 1 1 55794314
 P 2150 7200
 F 0 "FID3" H 2150 7025 60  0000 C CNN
 F 1 "Fiducial" H 2150 7375 60  0000 C CNN
-F 2 "Mirobot:Fiducial" H 2150 7200 60  0001 C CNN
+F 2 "Custom:Fiducial" H 2150 7200 60  0001 C CNN
 F 3 "" H 2150 7200 60  0000 C CNN
+F 4 "n" H 2150 7200 60  0001 C CNN "Required"
 	1    2150 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSHW-LOGO ART2
 U 1 1 557952A4
-P 6325 7500
-F 0 "ART2" H 6325 7700 60  0001 C CNN
-F 1 "OSHW-LOGO" H 6325 7325 60  0001 C CNN
-F 2 "Mirobot:OSHW_LOGO" H 6325 7500 60  0001 C CNN
-F 3 "" H 6325 7500 60  0000 C CNN
-	1    6325 7500
+P 6450 7550
+F 0 "ART2" H 6450 7750 60  0001 C CNN
+F 1 "OSHW-LOGO" H 6450 7375 60  0001 C CNN
+F 2 "Custom:OSHW_LOGO" H 6450 7550 60  0001 C CNN
+F 3 "" H 6450 7550 60  0000 C CNN
+F 4 "n" H 6450 7550 60  0001 C CNN "Required"
+	1    6450 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L MIROBOT-LOGO ART1
 U 1 1 557952EE
-P 6300 7100
-F 0 "ART1" H 6325 7575 60  0001 C CNN
-F 1 "MIROBOT-LOGO" H 6300 6650 60  0001 C CNN
-F 2 "Mirobot:MIROBOT_LOGO" H 6300 7100 60  0001 C CNN
-F 3 "" H 6300 7100 60  0000 C CNN
-	1    6300 7100
+P 6300 7225
+F 0 "ART1" H 6325 7700 60  0001 C CNN
+F 1 "MIROBOT-LOGO" H 6300 6775 60  0001 C CNN
+F 2 "Custom:MIROBOT_LOGO" H 6300 7225 60  0001 C CNN
+F 3 "" H 6300 7225 60  0000 C CNN
+F 4 "n" H 6300 7225 60  0001 C CNN "Required"
+	1    6300 7225
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 5125 2    40   Input ~ 0
+Text GLabel 4450 5025 2    40   Input ~ 0
 SDA
 Text GLabel 3775 5225 2    40   Input ~ 0
 SERVO
 Text GLabel 3625 4925 2    40   Input ~ 0
 LED
-Text GLabel 3625 4825 2    40   Input ~ 0
-GPIO5
+Text GLabel 2000 4925 0    40   Input ~ 0
+LED_EN
 Text GLabel 3625 4725 2    40   Input ~ 0
 RXD
 Text GLabel 3625 4625 2    40   Input ~ 0
@@ -222,10 +251,14 @@ F 0 "R4" V 4180 4575 50  0000 C CNN
 F 1 "10k" V 4107 4576 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4030 4575 30  0001 C CNN
 F 3 "" H 4100 4575 30  0000 C CNN
+F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
+F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
+F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 4100 4575 60  0001 C CNN "Required"
 	1    4100 4575
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 5025 2    40   Input ~ 0
+Text GLabel 4450 5125 2    40   Input ~ 0
 SCL
 $Comp
 L R R1
@@ -235,10 +268,14 @@ F 0 "R1" V 1705 4275 50  0000 C CNN
 F 1 "10k" V 1632 4276 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1555 4275 30  0001 C CNN
 F 3 "" H 1625 4275 30  0000 C CNN
+F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
+F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
+F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 1625 4275 60  0001 C CNN "Required"
 	1    1625 4275
 	-1   0    0    1   
 $EndComp
-Text GLabel 2000 4925 0    40   Input ~ 0
+Text GLabel 3625 4825 2    40   Input ~ 0
 BUZZER
 Text GLabel 2000 5025 0    40   Input ~ 0
 SR_LATCH
@@ -370,6 +407,7 @@ F0 "Sensors" 60
 F1 "Sensors.sch" 60
 F2 "SCL" I L 1375 2225 60 
 F3 "SDA" I L 1375 2050 60 
+F4 "LED_EN" I L 1375 1875 60 
 $EndSheet
 Wire Wire Line
 	1375 2050 1225 2050
@@ -390,9 +428,9 @@ F4 "SR_LATCH" I L 3325 2400 60
 $EndSheet
 Text GLabel 3175 2400 0    60   Input ~ 0
 SR_LATCH
-Text GLabel 3175 2225 0    60   Input ~ 0
-SR_CLK
 Text GLabel 3175 2050 0    60   Input ~ 0
+SR_CLK
+Text GLabel 3175 2225 0    60   Input ~ 0
 SR_DATA
 Wire Wire Line
 	3175 2050 3325 2050
@@ -438,8 +476,13 @@ U 1 1 56A642DE
 P 9475 4875
 F 0 "L1" H 9725 4575 60  0000 C CNN
 F 1 "WS2812B" H 9525 5125 60  0000 C CNN
-F 2 "Mirobot:WS2812B" H 9475 4875 60  0001 C CNN
+F 2 "Custom:WS2812B" H 9475 4875 60  0001 C CNN
 F 3 "" H 9475 4875 60  0000 C CNN
+F 4 "Serial RGB LED" H 9475 4875 60  0001 C CNN "Description"
+F 5 "5050" H 9475 4875 60  0001 C CNN "Package ID"
+F 6 "World Semi" H 9475 4875 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "WS2812B" H 9475 4875 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "y" H 9475 4875 60  0001 C CNN "Required"
 	1    9475 4875
 	1    0    0    -1  
 $EndComp
@@ -484,4 +527,21 @@ Wire Wire Line
 	1850 4025 1850 4125
 Wire Wire Line
 	3700 5325 3600 5325
+Wire Wire Line
+	1375 1875 1225 1875
+Text GLabel 1225 1875 0    60   Input ~ 0
+LED_EN
+$Comp
+L PCB PCB1
+U 1 1 56B90766
+P 6550 6825
+F 0 "PCB1" H 6550 6975 60  0001 C CNN
+F 1 "PCB" H 6550 6675 60  0001 C CNN
+F 2 "" H 6550 6825 60  0000 C CNN
+F 3 "" H 6550 6825 60  0000 C CNN
+F 4 "The PCB" H 6550 6825 60  0001 C CNN "Description"
+F 5 "y" H 6550 6825 60  0001 C CNN "Required"
+	1    6550 6825
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
