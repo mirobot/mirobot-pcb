@@ -58,6 +58,6 @@ bmp.scr
 *.bck
 *.kicad_pcb-bak
 *.zip
-*/output/*
-*/released/*
+*output/*
+*released/*
 *_autosave*
