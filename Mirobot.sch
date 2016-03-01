@@ -233,9 +233,9 @@ F 4 "n" H 6300 7225 60  0001 C CNN "Required"
 $EndComp
 Text GLabel 4450 5025 2    40   Input ~ 0
 SDA
-Text GLabel 3775 5225 2    40   Input ~ 0
-SERVO
 Text GLabel 3625 4925 2    40   Input ~ 0
+SERVO
+Text GLabel 3775 5225 2    40   Input ~ 0
 LED
 Text GLabel 2000 4925 0    40   Input ~ 0
 LED_EN
