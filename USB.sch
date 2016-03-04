@@ -27,380 +27,462 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +3V3 #PWR022
-U 1 1 56A03110
-P 4800 3175
-F 0 "#PWR022" H 4800 3025 60  0001 C CNN
-F 1 "+3V3" H 4800 3315 60  0000 C CNN
-F 2 "" H 4800 3175 60  0000 C CNN
-F 3 "" H 4800 3175 60  0000 C CNN
-	1    4800 3175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3600 3250 3725
-Wire Wire Line
-	3250 3725 3700 3725
-Wire Wire Line
-	3700 3725 3700 3450
-$Comp
-L GND #PWR023
-U 1 1 56A044B4
-P 4000 4800
-F 0 "#PWR023" H 4000 4550 60  0001 C CNN
-F 1 "GND" H 4000 4650 60  0000 C CNN
-F 2 "" H 4000 4800 60  0000 C CNN
-F 3 "" H 4000 4800 60  0000 C CNN
-	1    4000 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L S8050 Q1
 U 1 1 56A047DD
-P 8125 4000
-F 0 "Q1" H 8325 4075 50  0000 L CNN
-F 1 "S8050" H 8325 4000 50  0000 L CNN
-F 2 "Custom:SOT-23" H 8325 3925 50  0001 L CIN
-F 3 "" H 8125 4000 50  0000 L CNN
-F 4 "S8050 NPN Transistor" H 6125 2775 60  0001 C CNN "Description"
-F 5 "SOT-23" H 6125 2775 60  0001 C CNN "Package ID"
-F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 8125 4000 60  0001 C CNN "Source2"
-F 7 "y" H 6125 2775 60  0001 C CNN "Required"
-	1    8125 4000
-	1    0    0    -1  
+P 3000 3125
+F 0 "Q1" H 3200 3200 50  0000 L CNN
+F 1 "S8050" H 3200 3125 50  0000 L CNN
+F 2 "Custom:SOT-23" H 3200 3050 50  0001 L CIN
+F 3 "" H 3000 3125 50  0000 L CNN
+F 4 "S8050 NPN Transistor" H 1000 1900 60  0001 C CNN "Description"
+F 5 "SOT-23" H 1000 1900 60  0001 C CNN "Package ID"
+F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 3000 3125 60  0001 C CNN "Source2"
+F 7 "y" H 1000 1900 60  0001 C CNN "Required"
+	1    3000 3125
+	-1   0    0    1   
 $EndComp
 $Comp
 L S8050 Q2
 U 1 1 56A048A7
-P 8125 4725
-F 0 "Q2" H 8325 4800 50  0000 L CNN
-F 1 "S8050" H 8325 4725 50  0000 L CNN
-F 2 "Custom:SOT-23" H 8325 4650 50  0001 L CIN
-F 3 "" H 8125 4725 50  0000 L CNN
-F 4 "S8050 NPN Transistor" H 6125 2775 60  0001 C CNN "Description"
-F 5 "SOT-23" H 6125 2775 60  0001 C CNN "Package ID"
-F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 8125 4725 60  0001 C CNN "Source2"
-F 7 "y" H 6125 2775 60  0001 C CNN "Required"
-	1    8125 4725
-	1    0    0    1   
+P 3000 2400
+F 0 "Q2" H 3200 2475 50  0000 L CNN
+F 1 "S8050" H 3200 2400 50  0000 L CNN
+F 2 "Custom:SOT-23" H 3200 2325 50  0001 L CIN
+F 3 "" H 3000 2400 50  0000 L CNN
+F 4 "S8050 NPN Transistor" H 1000 450 60  0001 C CNN "Description"
+F 5 "SOT-23" H 1000 450 60  0001 C CNN "Package ID"
+F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 3000 2400 60  0001 C CNN "Source2"
+F 7 "y" H 1000 450 60  0001 C CNN "Required"
+	1    3000 2400
+	-1   0    0    -1  
 $EndComp
 $Comp
 L R R12
 U 1 1 56A04962
-P 7475 4725
-F 0 "R12" V 7555 4725 50  0000 C CNN
-F 1 "10k" V 7475 4725 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7405 4725 50  0001 C CNN
-F 3 "" H 7475 4725 50  0000 C CNN
-F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
-F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
-F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
-	1    7475 4725
-	0    -1   -1   0   
+P 3650 2400
+F 0 "R12" V 3730 2400 50  0000 C CNN
+F 1 "10k" V 3650 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3580 2400 50  0001 C CNN
+F 3 "" H 3650 2400 50  0000 C CNN
+F 4 "0603 10k Resistor" H -1975 1950 60  0001 C CNN "Description"
+F 5 "0603" H -1975 1950 60  0001 C CNN "Package ID"
+F 6 "Generic" H -1975 1950 60  0001 C CNN "Manufacturer Name (MFN)"
+	1    3650 2400
+	0    1    1    0   
 $EndComp
 $Comp
 L R R11
 U 1 1 56A049BD
-P 7475 4000
-F 0 "R11" V 7555 4000 50  0000 C CNN
-F 1 "10k" V 7475 4000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7405 4000 50  0001 C CNN
-F 3 "" H 7475 4000 50  0000 C CNN
-F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
-F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
-F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
-	1    7475 4000
-	0    -1   -1   0   
+P 3650 3125
+F 0 "R11" V 3730 3125 50  0000 C CNN
+F 1 "10k" V 3650 3125 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3580 3125 50  0001 C CNN
+F 3 "" H 3650 3125 50  0000 C CNN
+F 4 "0603 10k Resistor" H -1975 3400 60  0001 C CNN "Description"
+F 5 "0603" H -1975 3400 60  0001 C CNN "Package ID"
+F 6 "Generic" H -1975 3400 60  0001 C CNN "Manufacturer Name (MFN)"
+	1    3650 3125
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8225 4925 8225 5125
-Wire Wire Line
-	8225 5125 8800 5125
-Wire Wire Line
-	8225 3800 8225 3575
-Wire Wire Line
-	8225 3575 8825 3575
-Wire Wire Line
-	7925 4725 7625 4725
-Wire Wire Line
-	7925 4000 7625 4000
-Wire Wire Line
-	6950 4725 7325 4725
-Wire Wire Line
-	6150 4000 7325 4000
-Wire Wire Line
-	8225 4200 8225 4300
-Wire Wire Line
-	8225 4300 7150 4300
-Wire Wire Line
-	7150 4300 7150 4725
-Connection ~ 7150 4725
-Wire Wire Line
-	8225 4525 8225 4425
-Wire Wire Line
-	8225 4425 7225 4425
-Wire Wire Line
-	7225 4425 7225 4000
-Connection ~ 7225 4000
-Wire Wire Line
-	6150 3600 6950 3600
-Wire Wire Line
-	6950 3600 6950 4725
-Text HLabel 8825 3575 2    60   Input ~ 0
+Text HLabel 2300 3550 0    60   Input ~ 0
 GPIO0
-Text HLabel 8800 5125 2    60   Input ~ 0
+Text HLabel 2325 2000 0    60   Input ~ 0
 RST
-Text HLabel 6325 3900 2    60   Input ~ 0
+Text HLabel 4700 3500 0    60   Input ~ 0
 DOUT
-Text HLabel 6325 3800 2    60   Input ~ 0
+Text HLabel 4700 3100 0    60   Input ~ 0
 DIN
-$Comp
-L CP2104 U?
-U 1 1 56B1F124
-P 5550 4050
-AR Path="/56B1F124" Ref="U?"  Part="1" 
-AR Path="/56B1E38B/56B1F124" Ref="U2"  Part="1" 
-AR Path="/56A02537/56B1F124" Ref="U6"  Part="1" 
-F 0 "U6" H 5225 3375 60  0000 C CNN
-F 1 "CP2104" H 5500 4700 60  0000 C CNN
-F 2 "Custom:QFN-24-1EP_4x4mm_Pitch0.5mm-easySolder" H 5550 4100 60  0001 C CNN
-F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5550 4100 60  0001 C CNN
-F 4 "USB to Serial Converter" H 5550 4050 60  0001 C CNN "Description"
-F 5 "QFN-24" H 5550 4050 60  0001 C CNN "Package ID"
-F 6 "Silicon Labs" H 5550 4050 60  0001 C CNN "Manufacturer Name (MFN)"
-F 7 "CP2104" H 5550 4050 60  0001 C CNN "Manfr. Part Number (MFP)"
-F 8 "http://www.digikey.co.uk/product-detail/en/CP2104-F03-GMR/CP2104-F03-GMR-ND/4069045" H 5550 4050 60  0001 C CNN "Source1"
-F 9 "http://www.aliexpress.com/item/FREE-SHIPPING-250-PCS-LOT-CP2104-CP2104-FMR-2104-QFN-high-quality/32541269620.html" H 5550 4050 60  0001 C CNN "Source2"
-F 10 "y" H 5550 4050 60  0001 C CNN "Required"
-	1    5550 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 3800 6325 3800
-Wire Wire Line
-	6150 3900 6325 3900
-NoConn ~ 6150 4500
-NoConn ~ 6150 4600
-NoConn ~ 4950 4600
-NoConn ~ 4950 4500
-NoConn ~ 4950 4400
-NoConn ~ 6150 4200
-NoConn ~ 6150 4400
-NoConn ~ 6150 3500
-NoConn ~ 6150 3700
-NoConn ~ 6150 4100
-Wire Wire Line
-	3800 3450 3800 3800
-Wire Wire Line
-	3800 3800 4950 3800
-Wire Wire Line
-	3900 3450 3900 3700
-Wire Wire Line
-	3900 3700 4950 3700
-Wire Wire Line
-	4400 3900 4950 3900
-Wire Wire Line
-	4800 3175 4800 4100
-Wire Wire Line
-	4800 4000 4950 4000
-Connection ~ 4800 3900
-Wire Wire Line
-	4800 4100 4950 4100
-Connection ~ 4800 4000
-NoConn ~ 4950 4200
-NoConn ~ 4950 3500
-Wire Wire Line
-	6150 4300 6350 4300
-Wire Wire Line
-	6350 4300 6350 5025
-$Comp
-L GND #PWR024
-U 1 1 56B1FCB2
-P 6350 5025
-F 0 "#PWR024" H 6350 4775 60  0001 C CNN
-F 1 "GND" H 6350 4875 60  0000 C CNN
-F 2 "" H 6350 5025 60  0000 C CNN
-F 3 "" H 6350 5025 60  0000 C CNN
-	1    6350 5025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 3600 4950 3600
-Wire Wire Line
-	4000 3600 4000 4800
-Connection ~ 4000 3600
-Wire Wire Line
-	4625 4300 4950 4300
-$Comp
-L R R10
-U 1 1 56B1FE0D
-P 4625 4100
-F 0 "R10" V 4705 4100 50  0000 C CNN
-F 1 "10k" V 4625 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4555 4100 50  0001 C CNN
-F 3 "" H 4625 4100 50  0000 C CNN
-F 4 "0603 10k Resistor" H 1850 4275 60  0001 C CNN "Description"
-F 5 "0603" H 1850 4275 60  0001 C CNN "Package ID"
-F 6 "Generic" H 1850 4275 60  0001 C CNN "Manufacturer Name (MFN)"
-F 7 "y" H 4625 4100 60  0001 C CNN "Required"
-	1    4625 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4625 4300 4625 4250
-Wire Wire Line
-	4625 3950 4625 3900
-$Comp
-L C_Small C3
-U 1 1 56B20002
-P 4300 3900
-F 0 "C3" H 4310 3970 50  0000 L CNN
-F 1 "0.1uF" H 4310 3820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4300 3900 50  0001 C CNN
-F 3 "" H 4300 3900 50  0000 C CNN
-F 4 "0.1uF 0603 Capacitor" H 4300 3900 60  0001 C CNN "Description"
-F 5 "0603" H 4300 3900 60  0001 C CNN "Package ID"
-F 6 "Generic" H 4300 3900 60  0001 C CNN "Manufacturer Name (MFN)"
-F 7 "y" H 4300 3900 60  0001 C CNN "Required"
-	1    4300 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L C_Small C4
-U 1 1 56B20051
-P 4300 4175
-F 0 "C4" H 4310 4245 50  0000 L CNN
-F 1 "4.7uF" H 4310 4095 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4300 4175 50  0001 C CNN
-F 3 "" H 4300 4175 50  0000 C CNN
-F 4 "4.7uF 0603 Capacitor" H 4300 3900 60  0001 C CNN "Description"
-F 5 "0603" H 4300 3900 60  0001 C CNN "Package ID"
-F 6 "Generic" H 4300 3900 60  0001 C CNN "Manufacturer Name (MFN)"
-F 7 "y" H 4300 3900 60  0001 C CNN "Required"
-	1    4300 4175
-	0    1    1    0   
-$EndComp
-Connection ~ 4625 3900
-Wire Wire Line
-	4200 3900 4000 3900
-Connection ~ 4000 3900
-Wire Wire Line
-	4400 4175 4500 4175
-Wire Wire Line
-	4500 4175 4500 3900
-Connection ~ 4500 3900
-Wire Wire Line
-	4200 4175 4000 4175
-Connection ~ 4000 4175
 $Comp
 L GND #PWR025
 U 1 1 56B202C6
-P 4400 3175
-F 0 "#PWR025" H 4400 2925 60  0001 C CNN
-F 1 "GND" H 4400 3025 60  0000 C CNN
-F 2 "" H 4400 3175 60  0000 C CNN
-F 3 "" H 4400 3175 60  0000 C CNN
-	1    4400 3175
+P 8550 3575
+F 0 "#PWR025" H 8550 3325 60  0001 C CNN
+F 1 "GND" H 8550 3425 60  0000 C CNN
+F 2 "" H 8550 3575 60  0000 C CNN
+F 3 "" H 8550 3575 60  0000 C CNN
+	1    8550 3575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 3050 4400 3050
-Wire Wire Line
-	4400 3050 4400 3175
 $Comp
 L +5V #PWR026
 U 1 1 56B2125D
-P 3250 3600
-F 0 "#PWR026" H 3250 3450 60  0001 C CNN
-F 1 "+5V" H 3250 3740 60  0000 C CNN
-F 2 "" H 3250 3600 60  0000 C CNN
-F 3 "" H 3250 3600 60  0000 C CNN
-	1    3250 3600
+P 7400 3500
+F 0 "#PWR026" H 7400 3350 60  0001 C CNN
+F 1 "+5V" H 7400 3640 60  0000 C CNN
+F 2 "" H 7400 3500 60  0000 C CNN
+F 3 "" H 7400 3500 60  0000 C CNN
+	1    7400 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 4850 6350 4850
-Connection ~ 6350 4850
 $Comp
 L USB_OTG P1
 U 1 1 56B24921
-P 3900 3150
-F 0 "P1" H 4225 3025 50  0000 C CNN
-F 1 "USB_OTG" H 3900 3350 50  0000 C CNN
-F 2 "Custom:MOLEX_MICRO_USB" V 3850 3050 50  0001 C CNN
-F 3 "http://docs-europe.electrocomponents.com/webdocs/1388/0900766b813885f7.pdf" H 3850 3050 50  0001 C CNN
-F 4 "Micro USB Socket" H 3900 3150 60  0001 C CNN "Description"
-F 5 "Molex" H 3900 3150 60  0001 C CNN "Manufacturer Name (MFN)"
-F 6 "105017-0001" H 3900 3150 60  0001 C CNN "Manfr. Part Number (MFP)"
-F 7 "http://www.aliexpress.com/item/1000-pieces-lot-micro-usb-5pin-card-socket-Mike-Horn-Female-Block-USB-socket/32466672815.html" H 3900 3150 60  0001 C CNN "Source2"
-F 8 "y" H 3900 3150 60  0001 C CNN "Required"
-	1    3900 3150
+P 8050 3050
+F 0 "P1" H 8375 2925 50  0000 C CNN
+F 1 "USB_OTG" H 8050 3250 50  0000 C CNN
+F 2 "Custom:MOLEX_MICRO_USB" V 8000 2950 50  0001 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/1388/0900766b813885f7.pdf" H 8000 2950 50  0001 C CNN
+F 4 "Micro USB Socket" H 8050 3050 60  0001 C CNN "Description"
+F 5 "Molex" H 8050 3050 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "105017-0001" H 8050 3050 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 7 "http://www.aliexpress.com/item/1000-pieces-lot-micro-usb-5pin-card-socket-Mike-Horn-Female-Block-USB-socket/32466672815.html" H 8050 3050 60  0001 C CNN "Source2"
+F 8 "y" H 8050 3050 60  0001 C CNN "Required"
+	1    8050 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 3450 4100 3600
-Connection ~ 4100 3600
-NoConn ~ 4000 3450
+NoConn ~ 8150 3350
 $Comp
 L CONN_01X06 P4
 U 1 1 56B52E31
-P 9125 2000
-F 0 "P4" H 9125 2350 50  0000 C CNN
-F 1 "CONN_01X06" V 9225 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 9125 2000 50  0001 C CNN
-F 3 "" H 9125 2000 50  0000 C CNN
-F 4 "n" H 9125 2000 60  0001 C CNN "Required"
-	1    9125 2000
-	1    0    0    -1  
+P 2000 5125
+F 0 "P4" H 2000 5475 50  0000 C CNN
+F 1 "CONN_01X06" V 2100 5125 50  0000 C CNN
+F 2 "Custom:6-PIN-EDGE-CONN" H 2000 5125 50  0001 C CNN
+F 3 "" H 2000 5125 50  0000 C CNN
+F 4 "n" H 2000 5125 60  0001 C CNN "Required"
+	1    2000 5125
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8925 1750 8350 1750
-Wire Wire Line
-	8350 1750 8350 2550
 $Comp
 L GND #PWR027
 U 1 1 56B530DD
-P 8350 2550
-F 0 "#PWR027" H 8350 2300 60  0001 C CNN
-F 1 "GND" H 8350 2400 60  0000 C CNN
-F 2 "" H 8350 2550 60  0000 C CNN
-F 3 "" H 8350 2550 60  0000 C CNN
-	1    8350 2550
-	1    0    0    -1  
+P 2775 4575
+F 0 "#PWR027" H 2775 4325 60  0001 C CNN
+F 1 "GND" H 2775 4425 60  0000 C CNN
+F 2 "" H 2775 4575 60  0000 C CNN
+F 3 "" H 2775 4575 60  0000 C CNN
+	1    2775 4575
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8925 1850 8550 1850
-Wire Wire Line
-	8550 1850 8550 3575
-Connection ~ 8550 3575
-Wire Wire Line
-	8925 1950 8650 1950
-Wire Wire Line
-	8650 1950 8650 1550
 $Comp
-L +3V3 #PWR028
-U 1 1 56B5324B
-P 8650 1550
-F 0 "#PWR028" H 8650 1400 60  0001 C CNN
-F 1 "+3V3" H 8650 1690 60  0000 C CNN
-F 2 "" H 8650 1550 60  0000 C CNN
-F 3 "" H 8650 1550 60  0000 C CNN
-	1    8650 1550
+L +5V #PWR028
+U 1 1 56D87D84
+P 2475 5575
+F 0 "#PWR028" H 2475 5425 60  0001 C CNN
+F 1 "+5V" H 2475 5715 60  0000 C CNN
+F 2 "" H 2475 5575 60  0000 C CNN
+F 3 "" H 2475 5575 60  0000 C CNN
+	1    2475 5575
+	-1   0    0    1   
+$EndComp
+$Comp
+L PL2303HX U6
+U 1 1 56D9370C
+P 6150 3750
+F 0 "U6" H 5850 4550 60  0000 C CNN
+F 1 "PL2303HX" H 6050 2950 60  0000 C CNN
+F 2 "Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm" H 6150 3800 60  0001 C CNN
+F 3 "" H 6150 3800 60  0000 C CNN
+F 4 "y" H 6150 3750 60  0001 C CNN "Required"
+	1    6150 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8925 2050 6200 2050
+	7400 3900 7400 3500
 Wire Wire Line
-	6200 2050 6200 3800
-Connection ~ 6200 3800
+	7400 3625 7850 3625
 Wire Wire Line
-	6275 3900 6275 2150
+	7850 3625 7850 3350
 Wire Wire Line
-	6275 2150 8925 2150
-Connection ~ 6275 3900
+	2900 2200 2900 2000
 Wire Wire Line
-	8925 2250 8650 2250
+	2900 2000 2325 2000
 Wire Wire Line
-	8650 2250 8650 5125
-Connection ~ 8650 5125
+	3200 2400 3500 2400
+Wire Wire Line
+	3200 3125 3500 3125
+Wire Wire Line
+	3800 2400 4175 2400
+Wire Wire Line
+	3800 3125 4300 3125
+Wire Wire Line
+	2900 2925 2900 2825
+Wire Wire Line
+	2900 2825 3975 2825
+Wire Wire Line
+	3975 2825 3975 2400
+Connection ~ 3975 2400
+Wire Wire Line
+	2900 2600 2900 2700
+Wire Wire Line
+	2900 2700 3900 2700
+Wire Wire Line
+	3900 2700 3900 3125
+Connection ~ 3900 3125
+Wire Wire Line
+	4175 2400 4175 4875
+Wire Wire Line
+	8450 2950 8550 2950
+Wire Wire Line
+	8550 2950 8550 3575
+Wire Wire Line
+	8250 3350 8250 3425
+Wire Wire Line
+	2200 5375 2775 5375
+Wire Wire Line
+	2775 5375 2775 4575
+Wire Wire Line
+	4300 5275 2200 5275
+Wire Wire Line
+	2200 5175 2475 5175
+Wire Wire Line
+	2475 5175 2475 5575
+Wire Wire Line
+	2200 5075 4850 5075
+Wire Wire Line
+	2200 4975 4750 4975
+Wire Wire Line
+	4175 4875 2200 4875
+Wire Wire Line
+	2900 3325 2900 3550
+Wire Wire Line
+	2900 3550 2300 3550
+Wire Wire Line
+	4300 3125 4300 5275
+Wire Wire Line
+	5600 3200 4175 3200
+Connection ~ 4175 3200
+Wire Wire Line
+	5600 3300 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4700 3500 5600 3500
+Wire Wire Line
+	4750 4975 4750 3500
+Connection ~ 4750 3500
+Wire Wire Line
+	4700 3100 5600 3100
+Wire Wire Line
+	4850 5075 4850 3100
+Connection ~ 4850 3100
+Wire Wire Line
+	5225 3400 5600 3400
+Wire Wire Line
+	5425 2600 5425 3400
+$Comp
+L C C2
+U 1 1 56D9436B
+P 5150 2800
+F 0 "C2" H 5175 2900 50  0000 L CNN
+F 1 "0.1uF" H 5175 2700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5188 2650 50  0001 C CNN
+F 3 "" H 5150 2800 50  0000 C CNN
+F 4 "y" H 5150 2800 60  0001 C CNN "Required"
+	1    5150 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR029
+U 1 1 56D94333
+P 5425 2600
+F 0 "#PWR029" H 5425 2450 60  0001 C CNN
+F 1 "+3V3" H 5425 2740 60  0000 C CNN
+F 2 "" H 5425 2600 60  0000 C CNN
+F 3 "" H 5425 2600 60  0000 C CNN
+	1    5425 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2800 5425 2800
+Connection ~ 5425 2800
+Wire Wire Line
+	5000 2800 4900 2800
+Wire Wire Line
+	4900 2800 4900 2850
+$Comp
+L GND #PWR030
+U 1 1 56D94536
+P 4900 2850
+F 0 "#PWR030" H 4900 2600 60  0001 C CNN
+F 1 "GND" H 4900 2700 60  0000 C CNN
+F 2 "" H 4900 2850 60  0000 C CNN
+F 3 "" H 4900 2850 60  0000 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5600 3600
+NoConn ~ 5600 3800
+NoConn ~ 5600 3900
+NoConn ~ 5600 4200
+NoConn ~ 5600 4300
+NoConn ~ 5600 4400
+NoConn ~ 6700 3100
+NoConn ~ 6700 3200
+NoConn ~ 6700 3500
+NoConn ~ 6700 3600
+NoConn ~ 6700 3700
+NoConn ~ 6700 3800
+$Comp
+L R R10
+U 1 1 56D946C3
+P 5225 3775
+F 0 "R10" V 5305 3775 50  0000 C CNN
+F 1 "10k" V 5225 3775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5155 3775 50  0001 C CNN
+F 3 "" H 5225 3775 50  0000 C CNN
+F 4 "y" H 5225 3775 60  0001 C CNN "Required"
+	1    5225 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4000 5225 4000
+Wire Wire Line
+	5225 4000 5225 3925
+Wire Wire Line
+	5225 3625 5225 3400
+Connection ~ 5425 3400
+Wire Wire Line
+	5600 3700 5450 3700
+Wire Wire Line
+	5450 3700 5450 3750
+$Comp
+L GND #PWR031
+U 1 1 56D94894
+P 5450 3750
+F 0 "#PWR031" H 5450 3500 60  0001 C CNN
+F 1 "GND" H 5450 3600 60  0000 C CNN
+F 2 "" H 5450 3750 60  0000 C CNN
+F 3 "" H 5450 3750 60  0000 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3300 7050 3300
+Wire Wire Line
+	6900 3300 6900 3525
+Wire Wire Line
+	6900 3400 6700 3400
+Wire Wire Line
+	7050 3300 7050 3400
+Connection ~ 6900 3300
+$Comp
+L GND #PWR032
+U 1 1 56D9499E
+P 7050 3400
+F 0 "#PWR032" H 7050 3150 60  0001 C CNN
+F 1 "GND" H 7050 3250 60  0000 C CNN
+F 2 "" H 7050 3400 60  0000 C CNN
+F 3 "" H 7050 3400 60  0000 C CNN
+	1    7050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 56D949D6
+P 6900 3675
+F 0 "C3" H 6925 3775 50  0000 L CNN
+F 1 "0.1uF" H 6925 3575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6938 3525 50  0001 C CNN
+F 3 "" H 6900 3675 50  0000 C CNN
+F 4 "y" H 6900 3675 60  0001 C CNN "Required"
+	1    6900 3675
+	-1   0    0    1   
+$EndComp
+Connection ~ 6900 3400
+Wire Wire Line
+	6700 3900 7400 3900
+Wire Wire Line
+	6900 3900 6900 3825
+Connection ~ 7400 3625
+Connection ~ 6900 3900
+$Comp
+L C C4
+U 1 1 56D94B14
+P 6975 4700
+F 0 "C4" H 7000 4800 50  0000 L CNN
+F 1 "0.1uF" H 7000 4600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7013 4550 50  0001 C CNN
+F 3 "" H 6975 4700 50  0000 C CNN
+F 4 "y" H 6975 4700 60  0001 C CNN "Required"
+	1    6975 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R15
+U 1 1 56D94CEC
+P 7275 4400
+F 0 "R15" V 7355 4400 50  0000 C CNN
+F 1 "27R" V 7275 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7205 4400 50  0001 C CNN
+F 3 "" H 7275 4400 50  0000 C CNN
+F 4 "y" H 7275 4400 60  0001 C CNN "Required"
+	1    7275 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 56D94DFF
+P 7275 4300
+F 0 "R14" V 7225 4125 50  0000 C CNN
+F 1 "27R" V 7275 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7205 4300 50  0001 C CNN
+F 3 "" H 7275 4300 50  0000 C CNN
+F 4 "y" H 7275 4300 60  0001 C CNN "Required"
+	1    7275 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4300 7125 4300
+Wire Wire Line
+	6700 4400 7125 4400
+Wire Wire Line
+	7950 3350 7950 4300
+Wire Wire Line
+	7950 4300 7425 4300
+Wire Wire Line
+	7425 4400 8050 4400
+Wire Wire Line
+	8050 4400 8050 3350
+Wire Wire Line
+	8250 3425 8550 3425
+Connection ~ 8550 3425
+Wire Wire Line
+	6700 4200 7450 4200
+Wire Wire Line
+	6975 4550 6975 4200
+Connection ~ 6975 4200
+Wire Wire Line
+	6975 5025 6975 4850
+$Comp
+L GND #PWR033
+U 1 1 56D9542D
+P 6875 5125
+F 0 "#PWR033" H 6875 4875 60  0001 C CNN
+F 1 "GND" H 6875 4975 60  0000 C CNN
+F 2 "" H 6875 5125 60  0000 C CNN
+F 3 "" H 6875 5125 60  0000 C CNN
+	1    6875 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4100 6775 4100
+Wire Wire Line
+	6775 4100 6775 5025
+Wire Wire Line
+	6775 5025 6975 5025
+Wire Wire Line
+	6875 5125 6875 5025
+Connection ~ 6875 5025
+Wire Wire Line
+	6700 4000 6900 4000
+Wire Wire Line
+	6900 4000 6900 4200
+Connection ~ 6900 4200
+$Comp
+L R R16
+U 1 1 56D95730
+P 7600 4200
+F 0 "R16" V 7525 4200 50  0000 C CNN
+F 1 "1.5k" V 7600 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7530 4200 50  0001 C CNN
+F 3 "" H 7600 4200 50  0000 C CNN
+F 4 "y" H 7600 4200 60  0001 C CNN "Required"
+	1    7600 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 4200 7800 4200
+Wire Wire Line
+	7800 4200 7800 4400
+Connection ~ 7800 4400
 $EndSCHEMATC
