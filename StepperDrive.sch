@@ -33,7 +33,7 @@ P 6400 3675
 F 0 "U5" H 6350 3175 50  0000 C CNN
 F 1 "ULN2803A" H 6400 4225 50  0000 C CNN
 F 2 "Custom:SO-18" H 6400 3675 60  0001 C CNN
-F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?pid=ULN2803APG&lang=en&type=datasheet" H 6400 3675 60  0000 C CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?pid=ULN2803APG&lang=en&type=datasheet" H 6400 3675 60  0001 C CNN
 F 4 "8 Channel Darlington Sink Driver" H 6400 3675 60  0001 C CNN "Description"
 F 5 "SOP18" H 6400 3675 60  0001 C CNN "Package ID"
 F 6 "Toshiba" H 6400 3675 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -50,7 +50,7 @@ P 8300 3325
 F 0 "P2" H 8300 3625 50  0000 C CNN
 F 1 "STEPPER" V 8400 3325 50  0000 C CNN
 F 2 "Custom:JST_XH-1x05" H 8300 3325 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 8300 3325 60  0000 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 8300 3325 60  0001 C CNN
 F 4 "JST XH 5 Pin Socket Male" H 8300 3325 60  0001 C CNN "Description"
 F 5 "JST" H 8300 3325 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "B5B-XH-A" H 8300 3325 60  0001 C CNN "Manfr. Part Number (MFP)"
@@ -66,7 +66,7 @@ P 8300 4125
 F 0 "P3" H 8300 4425 50  0000 C CNN
 F 1 "STEPPER" V 8400 4125 50  0000 C CNN
 F 2 "Custom:JST_XH-1x05" H 8300 4125 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 8300 3325 60  0000 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 8300 3325 60  0001 C CNN
 F 4 "JST XH 5 Pin Socket Male" H 8300 3325 60  0001 C CNN "Description"
 F 5 "JST" H 8300 3325 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "B5B-XH-A" H 8300 3325 60  0001 C CNN "Manfr. Part Number (MFP)"
@@ -104,7 +104,7 @@ P 4500 3725
 F 0 "U4" H 4650 4325 50  0000 C CNN
 F 1 "74HC595" H 4500 3125 50  0000 C CNN
 F 2 "SMD_Packages:SO-16-N" H 4500 3725 50  0001 C CNN
-F 3 "https://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 4500 3725 50  0000 C CNN
+F 3 "https://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 4500 3725 50  0001 C CNN
 F 4 "8-Bit Serial Shift Register" H 4500 3725 60  0001 C CNN "Description"
 F 5 "SO16" H 4500 3725 60  0001 C CNN "Package ID"
 F 6 "NXP" H 4500 3725 60  0001 C CNN "Manufacturer Name (MFN)"
