@@ -27,22 +27,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 BATT1
-U 1 1 56A0745F
-P 2775 3325
-F 0 "BATT1" H 2775 3475 50  0000 C CNN
-F 1 "BATT" V 2875 3325 50  0000 C CNN
-F 2 "Custom:JST_XH-1x02" H 2775 3325 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 2775 3325 60  0001 C CNN
-F 4 "JST XH 2 Pin Male Socket" H 2775 3325 60  0001 C CNN "Description"
-F 5 "JST" H 2775 3325 60  0001 C CNN "Manufacturer Name (MFN)"
-F 6 "B2B-XH-A" H 2775 3325 60  0001 C CNN "Manfr. Part Number (MFP)"
-F 7 "http://www.digikey.co.uk/product-detail/en/B2B-XH-A(LF)(SN)/455-2247-ND/1651045" H 2775 3325 60  0001 C CNN "Source1"
-F 8 "y" H 2775 3325 60  0001 C CNN "Required"
-	1    2775 3325
-	-1   0    0    1   
-$EndComp
-$Comp
 L GND #PWR032
 U 1 1 56A07466
 P 3175 3550
@@ -71,7 +55,7 @@ P 3825 3175
 F 0 "SW3" H 4050 3425 60  0000 C CNN
 F 1 "POWER_SWITCH" H 3865 2925 59  0000 C CNN
 F 2 "Custom:SMALL_SLIDE_SWITCH" H 3825 3175 60  0001 C CNN
-F 3 "" H 3825 3175 60  0000 C CNN
+F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/10Pcs-Toggle-switch-SK12D07VG3-stents-Small-toggle-switch-3-mm-high-Miniature-Slide-Switch-Side-Knob/32762894678.html\"\",\"\"[LINK]\"\")" H 3825 3175 60  0001 C CNN
 F 4 "SPDT Slide Switch R/A" H 3825 3175 60  0001 C CNN "Description"
 F 5 "Generic" H 3825 3175 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "y" H 3825 3175 60  0001 C CNN "Required"
@@ -230,52 +214,6 @@ F 8 "y" H 5575 3425 60  0001 C CNN "Required"
 	1    7075 3425
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4925 3175 5800 3175
-Wire Wire Line
-	3425 3275 2975 3275
-Wire Wire Line
-	2975 3375 3175 3375
-Wire Wire Line
-	3175 3375 3175 3550
-Wire Wire Line
-	5200 3175 5200 2925
-Wire Wire Line
-	4750 6375 4750 6550
-Wire Wire Line
-	4350 6375 4350 6550
-Wire Wire Line
-	3950 6375 3950 6550
-Connection ~ 5200 3175
-Wire Wire Line
-	6200 3475 6200 3800
-Wire Wire Line
-	6600 3175 7400 3175
-Wire Wire Line
-	7400 3175 7400 2875
-Wire Wire Line
-	5575 3275 5575 3175
-Connection ~ 5575 3175
-Wire Wire Line
-	6725 3275 6725 3175
-Connection ~ 6725 3175
-Wire Wire Line
-	7075 3275 7075 3175
-Connection ~ 7075 3175
-Wire Wire Line
-	5575 3575 5575 3700
-Wire Wire Line
-	5575 3700 7075 3700
-Connection ~ 6200 3700
-Wire Wire Line
-	7075 3700 7075 3575
-Wire Wire Line
-	6725 3575 6725 3700
-Connection ~ 6725 3700
-Wire Wire Line
-	2275 6500 2275 6700
-Wire Wire Line
-	2275 6200 2275 6025
 $Comp
 L CP1 C1
 U 1 1 56A07D2B
@@ -313,10 +251,6 @@ F 3 "" H 2275 6700 60  0000 C CNN
 	1    2275 6700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3425 3075 3175 3075
-Wire Wire Line
-	3175 3075 3175 2850
 $Comp
 L +5V #PWR044
 U 1 1 56B2F9C1
@@ -343,8 +277,6 @@ F 7 "y" H 4675 3175 60  0001 C CNN "Required"
 	1    4675 3175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4425 3175 4225 3175
 $Comp
 L GND #PWR045
 U 1 1 56B3E3A0
@@ -356,8 +288,112 @@ F 3 "" H 4300 3550 60  0000 C CNN
 	1    4300 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_01X03 BATT1
+U 1 1 59B7F792
+P 2775 3175
+F 0 "BATT1" H 2775 3375 50  0000 C CNN
+F 1 "BATT" V 2875 3175 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 2775 3175 50  0001 C CNN
+F 3 "" H 2775 3175 50  0000 C CNN
+	1    2775 3175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3175 3275 2975 3275
+Wire Wire Line
+	3175 3550 3175 3275
+Wire Wire Line
+	4300 3375 4300 3550
 Wire Wire Line
 	4225 3375 4300 3375
 Wire Wire Line
-	4300 3375 4300 3550
+	4425 3175 4225 3175
+Wire Wire Line
+	2275 6200 2275 6025
+Wire Wire Line
+	2275 6500 2275 6700
+Connection ~ 6725 3700
+Wire Wire Line
+	6725 3575 6725 3700
+Wire Wire Line
+	7075 3700 7075 3575
+Connection ~ 6200 3700
+Wire Wire Line
+	5575 3700 7075 3700
+Wire Wire Line
+	5575 3575 5575 3700
+Connection ~ 7075 3175
+Wire Wire Line
+	7075 3275 7075 3175
+Connection ~ 6725 3175
+Wire Wire Line
+	6725 3275 6725 3175
+Connection ~ 5575 3175
+Wire Wire Line
+	5575 3275 5575 3175
+Wire Wire Line
+	7400 3175 7400 2875
+Wire Wire Line
+	6600 3175 7400 3175
+Wire Wire Line
+	6200 3475 6200 3800
+Connection ~ 5200 3175
+Wire Wire Line
+	3950 6375 3950 6550
+Wire Wire Line
+	4350 6375 4350 6550
+Wire Wire Line
+	4750 6375 4750 6550
+Wire Wire Line
+	5200 3175 5200 2925
+Wire Wire Line
+	4925 3175 5800 3175
+Wire Wire Line
+	3425 3275 3425 3175
+Wire Wire Line
+	3425 3175 2975 3175
+Wire Wire Line
+	3175 2850 3175 3175
+Connection ~ 3175 3175
+Wire Wire Line
+	3425 3075 2975 3075
+$Comp
+L TEST_1P W8
+U 1 1 59B82FDC
+P 4325 2975
+F 0 "W8" H 4325 3245 50  0000 C CNN
+F 1 "TEST_1P" H 4325 3175 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4525 2975 50  0001 C CNN
+F 3 "" H 4525 2975 50  0000 C CNN
+	1    4325 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 2975 4325 3175
+Connection ~ 4325 3175
+$Comp
+L TEST_1P W7
+U 1 1 59B831D2
+P 1725 6200
+F 0 "W7" H 1725 6470 50  0000 C CNN
+F 1 "TEST_1P" H 1725 6400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1925 6200 50  0001 C CNN
+F 3 "" H 1925 6200 50  0000 C CNN
+	1    1725 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR046
+U 1 1 59B83226
+P 1725 6425
+F 0 "#PWR046" H 1725 6175 60  0001 C CNN
+F 1 "GND" H 1725 6275 60  0000 C CNN
+F 2 "" H 1725 6425 60  0000 C CNN
+F 3 "" H 1725 6425 60  0000 C CNN
+	1    1725 6425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 6200 1725 6425
 $EndSCHEMATC

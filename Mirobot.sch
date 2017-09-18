@@ -69,7 +69,7 @@ P 9575 3875
 F 0 "SG1" H 9775 3825 60  0000 C CNN
 F 1 "BUZZER" H 9575 4175 60  0000 C CNN
 F 2 "Custom:BUZZER" H 9575 3875 60  0001 C CNN
-F 3 "" H 9575 3875 60  0000 C CNN
+F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/Passive-buzzer-impedance-16r-16-hx/1279778638.html\"\", \"\"[LINK]\"\")" H 9575 3875 60  0001 C CNN
 F 4 "Small Buzzer" H 9575 3875 60  0001 C CNN "Description"
 F 5 "Generic" H 9575 3875 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "y" H 9575 3875 60  0001 C CNN "Required"
@@ -225,13 +225,13 @@ U 1 1 557952EE
 P 6300 7225
 F 0 "ART1" H 6325 7700 60  0001 C CNN
 F 1 "MIROBOT-LOGO" H 6300 6775 60  0001 C CNN
-F 2 "Custom:MIROBOT_LOGO" H 6300 7225 60  0001 C CNN
+F 2 "Custom:MIME_MIROBOT_LOGO" H 6300 7225 60  0001 C CNN
 F 3 "" H 6300 7225 60  0000 C CNN
 F 4 "n" H 6300 7225 60  0001 C CNN "Required"
 	1    6300 7225
 	1    0    0    -1  
 $EndComp
-Text GLabel 4825 5025 2    40   Input ~ 0
+Text GLabel 5200 5025 2    40   Input ~ 0
 SDA
 Text GLabel 4000 4925 2    40   Input ~ 0
 SERVO
@@ -241,7 +241,7 @@ Text GLabel 2375 4925 0    40   Input ~ 0
 LED_EN
 Text GLabel 4000 4725 2    40   Input ~ 0
 RXD
-Text GLabel 4000 4625 2    40   Input ~ 0
+Text GLabel 4200 4625 2    40   Input ~ 0
 TXD
 $Comp
 L R R4
@@ -287,7 +287,7 @@ Text GLabel 1825 4825 0    40   Input ~ 0
 CH_PD
 Text GLabel 2375 4725 0    40   Input ~ 0
 ADC
-Text GLabel 1825 4625 0    40   Input ~ 0
+Text GLabel 1425 4625 0    40   Input ~ 0
 RESET
 $Comp
 L +3V3 #PWR06
@@ -315,6 +315,174 @@ Text GLabel 6800 3825 0    40   Input ~ 0
 SERVO
 Text GLabel 9375 3825 0    40   Input ~ 0
 BUZZER
+NoConn ~ -1075 3000
+$Sheet
+S 1375 1375 1025 1200
+U 569FEEFC
+F0 "Sensors" 60
+F1 "Sensors.sch" 60
+F2 "SCL" I L 1375 2225 60 
+F3 "SDA" I L 1375 2050 60 
+F4 "LED_EN" I L 1375 1875 60 
+$EndSheet
+Text GLabel 1225 2050 0    60   Input ~ 0
+SDA
+Text GLabel 1225 2225 0    60   Input ~ 0
+SCL
+$Sheet
+S 3325 1375 1050 1200
+U 56A00A4A
+F0 "StepperDrive" 60
+F1 "StepperDrive.sch" 60
+F2 "SR_DATA" I L 3325 2225 60 
+F3 "SR_CLK" I L 3325 2050 60 
+F4 "SR_LATCH" I L 3325 2400 60 
+$EndSheet
+Text GLabel 3175 2400 0    60   Input ~ 0
+SR_LATCH
+Text GLabel 3175 2050 0    60   Input ~ 0
+SR_CLK
+Text GLabel 3175 2225 0    60   Input ~ 0
+SR_DATA
+$Sheet
+S 5300 1375 1100 1200
+U 56A02537
+F0 "USB" 60
+F1 "USB.sch" 60
+F2 "DIN" I L 5300 1850 60 
+F3 "DOUT" I L 5300 2050 60 
+F4 "GPIO0" I L 5300 2250 60 
+F5 "RST" I L 5300 2450 60 
+$EndSheet
+Text GLabel 5125 1850 0    60   Input ~ 0
+RXD
+Text GLabel 5125 2050 0    60   Input ~ 0
+TXD
+Text GLabel 5125 2450 0    60   Input ~ 0
+RESET
+$Sheet
+S 7275 1375 1125 1200
+U 56A0706D
+F0 "Power" 60
+F1 "power.sch" 60
+$EndSheet
+$Comp
+L WS2812B L1
+U 1 1 56A642DE
+P 9625 5575
+F 0 "L1" H 9875 5275 60  0000 C CNN
+F 1 "WS2812B" H 9675 5825 60  0000 C CNN
+F 2 "Custom:WS2812B" H 9625 5575 60  0001 C CNN
+F 3 "=HYPERLINK(www.world-semi.com/DownLoadFile/116)" H 9625 5575 60  0001 C CNN
+F 4 "Serial RGB LED" H 9625 5575 60  0001 C CNN "Description"
+F 5 "5050" H 9625 5575 60  0001 C CNN "Package ID"
+F 6 "World Semi" H 9625 5575 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "WS2812B" H 9625 5575 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "y" H 9625 5575 60  0001 C CNN "Required"
+	1    9625 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 56A647BD
+P 10300 5850
+F 0 "#PWR08" H 10300 5600 60  0001 C CNN
+F 1 "GND" H 10300 5700 60  0000 C CNN
+F 2 "" H 10300 5850 60  0000 C CNN
+F 3 "" H 10300 5850 60  0000 C CNN
+	1    10300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR09
+U 1 1 56A648E5
+P 8975 5275
+F 0 "#PWR09" H 8975 5125 60  0001 C CNN
+F 1 "+3V3" H 8975 5415 60  0000 C CNN
+F 2 "" H 8975 5275 60  0000 C CNN
+F 3 "" H 8975 5275 60  0000 C CNN
+	1    8975 5275
+	1    0    0    -1  
+$EndComp
+Text GLabel 10300 5475 2    60   Input ~ 0
+LED
+Text GLabel 1225 1875 0    60   Input ~ 0
+LED_EN
+$Comp
+L PCB PCB1
+U 1 1 56B90766
+P 6550 6825
+F 0 "PCB1" H 6550 6975 60  0001 C CNN
+F 1 "PCB" H 6550 6675 60  0001 C CNN
+F 2 "" H 6550 6825 60  0001 C CNN
+F 3 "" H 6550 6825 60  0000 C CNN
+F 4 "The PCB" H 6550 6825 60  0001 C CNN "Description"
+F 5 "y" H 6550 6825 60  0001 C CNN "Required"
+	1    6550 6825
+	1    0    0    -1  
+$EndComp
+Text GLabel 5125 2250 0    60   Input ~ 0
+SDA
+$Comp
+L CONN_01X04 P5
+U 1 1 56D97C94
+P 7100 5550
+F 0 "P5" H 7100 5800 50  0000 C CNN
+F 1 "CONN_01X04" V 7200 5550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7100 5550 50  0001 C CNN
+F 3 "" H 7100 5550 50  0000 C CNN
+F 4 "n" H 7100 5550 60  0001 C CNN "Required"
+	1    7100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 56D97F8D
+P 6475 5950
+F 0 "#PWR010" H 6475 5700 60  0001 C CNN
+F 1 "GND" H 6475 5800 60  0000 C CNN
+F 2 "" H 6475 5950 60  0000 C CNN
+F 3 "" H 6475 5950 60  0000 C CNN
+	1    6475 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR011
+U 1 1 56D98064
+P 6625 5275
+F 0 "#PWR011" H 6625 5125 60  0001 C CNN
+F 1 "+3V3" H 6625 5415 60  0000 C CNN
+F 2 "" H 6625 5275 60  0000 C CNN
+F 3 "" H 6625 5275 60  0000 C CNN
+	1    6625 5275
+	1    0    0    -1  
+$EndComp
+Text GLabel 6825 5500 0    40   Input ~ 0
+SDA
+Text GLabel 6825 5700 0    40   Input ~ 0
+SCL
+$Comp
+L TEST_1P W2
+U 1 1 59B83F2B
+P 3875 4225
+F 0 "W2" H 3875 4495 50  0000 C CNN
+F 1 "TEST_1P" H 3875 4425 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4075 4225 50  0001 C CNN
+F 3 "" H 4075 4225 50  0000 C CNN
+	1    3875 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W3
+U 1 1 59B83FAC
+P 4100 4450
+F 0 "W3" H 4100 4720 50  0000 C CNN
+F 1 "TEST_1P" H 4100 4650 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4300 4450 50  0001 C CNN
+F 3 "" H 4300 4450 50  0000 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3850 5125 4825 5125
 Wire Wire Line
@@ -326,17 +494,17 @@ Wire Wire Line
 Wire Wire Line
 	6800 4025 6800 4250
 Wire Wire Line
-	4000 4625 3850 4625
+	3850 4625 4200 4625
 Wire Wire Line
-	4000 4725 3850 4725
+	3850 4725 4000 4725
 Wire Wire Line
-	1825 4625 2500 4625
+	1425 4625 2500 4625
 Wire Wire Line
 	2375 4925 2500 4925
 Wire Wire Line
 	9475 3925 9475 4150
 Wire Wire Line
-	3850 5025 4825 5025
+	3850 5025 5200 5025
 Wire Wire Line
 	1825 4825 2500 4825
 Wire Wire Line
@@ -399,55 +567,16 @@ Wire Wire Line
 	6450 3925 6450 3675
 Wire Wire Line
 	9475 3825 9375 3825
-NoConn ~ -1075 3000
-$Sheet
-S 1375 1375 1025 1200
-U 569FEEFC
-F0 "Sensors" 60
-F1 "Sensors.sch" 60
-F2 "SCL" I L 1375 2225 60 
-F3 "SDA" I L 1375 2050 60 
-F4 "LED_EN" I L 1375 1875 60 
-$EndSheet
 Wire Wire Line
 	1375 2050 1225 2050
 Wire Wire Line
 	1375 2225 1225 2225
-Text GLabel 1225 2050 0    60   Input ~ 0
-SDA
-Text GLabel 1225 2225 0    60   Input ~ 0
-SCL
-$Sheet
-S 3325 1375 1050 1200
-U 56A00A4A
-F0 "StepperDrive" 60
-F1 "StepperDrive.sch" 60
-F2 "SR_DATA" I L 3325 2225 60 
-F3 "SR_CLK" I L 3325 2050 60 
-F4 "SR_LATCH" I L 3325 2400 60 
-$EndSheet
-Text GLabel 3175 2400 0    60   Input ~ 0
-SR_LATCH
-Text GLabel 3175 2050 0    60   Input ~ 0
-SR_CLK
-Text GLabel 3175 2225 0    60   Input ~ 0
-SR_DATA
 Wire Wire Line
 	3175 2050 3325 2050
 Wire Wire Line
 	3175 2225 3325 2225
 Wire Wire Line
 	3175 2400 3325 2400
-$Sheet
-S 5300 1375 1100 1200
-U 56A02537
-F0 "USB" 60
-F1 "USB.sch" 60
-F2 "DIN" I L 5300 1850 60 
-F3 "DOUT" I L 5300 2050 60 
-F4 "GPIO0" I L 5300 2250 60 
-F5 "RST" I L 5300 2450 60 
-$EndSheet
 Wire Wire Line
 	5300 1850 5125 1850
 Wire Wire Line
@@ -456,34 +585,6 @@ Wire Wire Line
 	5300 2250 5125 2250
 Wire Wire Line
 	5300 2450 5125 2450
-Text GLabel 5125 1850 0    60   Input ~ 0
-RXD
-Text GLabel 5125 2050 0    60   Input ~ 0
-TXD
-Text GLabel 5125 2450 0    60   Input ~ 0
-RESET
-$Sheet
-S 7275 1375 1125 1200
-U 56A0706D
-F0 "Power" 60
-F1 "power.sch" 60
-$EndSheet
-$Comp
-L WS2812B L1
-U 1 1 56A642DE
-P 9625 5575
-F 0 "L1" H 9875 5275 60  0000 C CNN
-F 1 "WS2812B" H 9675 5825 60  0000 C CNN
-F 2 "Custom:WS2812B" H 9625 5575 60  0001 C CNN
-F 3 "" H 9625 5575 60  0000 C CNN
-F 4 "Serial RGB LED" H 9625 5575 60  0001 C CNN "Description"
-F 5 "5050" H 9625 5575 60  0001 C CNN "Package ID"
-F 6 "World Semi" H 9625 5575 60  0001 C CNN "Manufacturer Name (MFN)"
-F 7 "WS2812B" H 9625 5575 60  0001 C CNN "Manfr. Part Number (MFP)"
-F 8 "y" H 9625 5575 60  0001 C CNN "Required"
-	1    9625 5575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10125 5675 10300 5675
 Wire Wire Line
@@ -494,31 +595,6 @@ Wire Wire Line
 	8975 5475 8975 5275
 Wire Wire Line
 	10125 5475 10300 5475
-NoConn ~ 9225 5675
-$Comp
-L GND #PWR08
-U 1 1 56A647BD
-P 10300 5850
-F 0 "#PWR08" H 10300 5600 60  0001 C CNN
-F 1 "GND" H 10300 5700 60  0000 C CNN
-F 2 "" H 10300 5850 60  0000 C CNN
-F 3 "" H 10300 5850 60  0000 C CNN
-	1    10300 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3V3 #PWR09
-U 1 1 56A648E5
-P 8975 5275
-F 0 "#PWR09" H 8975 5125 60  0001 C CNN
-F 1 "+3V3" H 8975 5415 60  0000 C CNN
-F 2 "" H 8975 5275 60  0000 C CNN
-F 3 "" H 8975 5275 60  0000 C CNN
-	1    8975 5275
-	1    0    0    -1  
-$EndComp
-Text GLabel 10300 5475 2    60   Input ~ 0
-LED
 Wire Wire Line
 	2000 4025 2000 4125
 Wire Wire Line
@@ -527,56 +603,6 @@ Wire Wire Line
 	4075 5325 3975 5325
 Wire Wire Line
 	1375 1875 1225 1875
-Text GLabel 1225 1875 0    60   Input ~ 0
-LED_EN
-$Comp
-L PCB PCB1
-U 1 1 56B90766
-P 6550 6825
-F 0 "PCB1" H 6550 6975 60  0001 C CNN
-F 1 "PCB" H 6550 6675 60  0001 C CNN
-F 2 "" H 6550 6825 60  0001 C CNN
-F 3 "" H 6550 6825 60  0000 C CNN
-F 4 "The PCB" H 6550 6825 60  0001 C CNN "Description"
-F 5 "y" H 6550 6825 60  0001 C CNN "Required"
-	1    6550 6825
-	1    0    0    -1  
-$EndComp
-Text GLabel 5125 2250 0    60   Input ~ 0
-SDA
-$Comp
-L CONN_01X04 P5
-U 1 1 56D97C94
-P 7100 5550
-F 0 "P5" H 7100 5800 50  0000 C CNN
-F 1 "CONN_01X04" V 7200 5550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7100 5550 50  0001 C CNN
-F 3 "" H 7100 5550 50  0000 C CNN
-	1    7100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR010
-U 1 1 56D97F8D
-P 6475 5950
-F 0 "#PWR010" H 6475 5700 60  0001 C CNN
-F 1 "GND" H 6475 5800 60  0000 C CNN
-F 2 "" H 6475 5950 60  0000 C CNN
-F 3 "" H 6475 5950 60  0000 C CNN
-	1    6475 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3V3 #PWR011
-U 1 1 56D98064
-P 6625 5275
-F 0 "#PWR011" H 6625 5125 60  0001 C CNN
-F 1 "+3V3" H 6625 5415 60  0000 C CNN
-F 2 "" H 6625 5275 60  0000 C CNN
-F 3 "" H 6625 5275 60  0000 C CNN
-	1    6625 5275
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 5400 6475 5400
 Wire Wire Line
@@ -589,8 +615,81 @@ Wire Wire Line
 	6900 5500 6825 5500
 Wire Wire Line
 	6900 5700 6825 5700
-Text GLabel 6825 5500 0    40   Input ~ 0
-SDA
-Text GLabel 6825 5700 0    40   Input ~ 0
-SCL
+Wire Wire Line
+	4100 4450 4100 4625
+Connection ~ 4100 4625
+Wire Wire Line
+	3875 4225 3875 4725
+Connection ~ 3875 4725
+$Comp
+L TEST_1P W4
+U 1 1 59B845C0
+P 5075 4875
+F 0 "W4" H 5075 5145 50  0000 C CNN
+F 1 "TEST_1P" H 5075 5075 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5275 4875 50  0001 C CNN
+F 3 "" H 5275 4875 50  0000 C CNN
+	1    5075 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 4875 5075 5025
+Connection ~ 5075 5025
+$Comp
+L TEST_1P W1
+U 1 1 59B849AC
+P 1625 4500
+F 0 "W1" H 1625 4770 50  0000 C CNN
+F 1 "TEST_1P" H 1625 4700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1825 4500 50  0001 C CNN
+F 3 "" H 1825 4500 50  0000 C CNN
+	1    1625 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 4500 1625 4625
+Connection ~ 1625 4625
+$Comp
+L CONN_01X03 P4
+U 1 1 59B94F7B
+P 8125 5575
+F 0 "P4" H 8125 5775 50  0000 C CNN
+F 1 "CONN_01X03" V 8225 5575 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8125 5575 50  0001 C CNN
+F 3 "" H 8125 5575 50  0000 C CNN
+	1    8125 5575
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59B954F2
+P 8650 5800
+F 0 "#PWR012" H 8650 5550 60  0001 C CNN
+F 1 "GND" H 8650 5650 60  0000 C CNN
+F 2 "" H 8650 5800 60  0000 C CNN
+F 3 "" H 8650 5800 60  0000 C CNN
+	1    8650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR013
+U 1 1 59B95581
+P 8650 5275
+F 0 "#PWR013" H 8650 5125 60  0001 C CNN
+F 1 "+3V3" H 8650 5415 60  0000 C CNN
+F 2 "" H 8650 5275 60  0000 C CNN
+F 3 "" H 8650 5275 60  0000 C CNN
+	1    8650 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9225 5675 8325 5675
+Wire Wire Line
+	8650 5275 8650 5475
+Wire Wire Line
+	8650 5475 8325 5475
+Wire Wire Line
+	8650 5800 8650 5575
+Wire Wire Line
+	8650 5575 8325 5575
 $EndSCHEMATC
