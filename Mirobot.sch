@@ -69,7 +69,7 @@ P 9575 3875
 F 0 "SG1" H 9775 3825 60  0000 C CNN
 F 1 "BUZZER" H 9575 4175 60  0000 C CNN
 F 2 "Custom:BUZZER" H 9575 3875 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/Passive-buzzer-impedance-16r-16-hx/1279778638.html\"\", \"\"[LINK]\"\")" H 9575 3875 60  0001 C CNN
+F 3 "https://www.aliexpress.com/item/Passive-buzzer-impedance-16r-16-hx/1279778638.html" H 9575 3875 60  0001 C CNN
 F 4 "Small Buzzer" H 9575 3875 60  0001 C CNN "Description"
 F 5 "Generic" H 9575 3875 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "y" H 9575 3875 60  0001 C CNN "Required"
@@ -373,7 +373,7 @@ P 9625 5575
 F 0 "L1" H 9875 5275 60  0000 C CNN
 F 1 "WS2812B" H 9675 5825 60  0000 C CNN
 F 2 "Custom:WS2812B" H 9625 5575 60  0001 C CNN
-F 3 "=HYPERLINK(www.world-semi.com/DownLoadFile/116)" H 9625 5575 60  0001 C CNN
+F 3 "http://www.world-semi.com/DownLoadFile/116" H 9625 5575 60  0001 C CNN
 F 4 "Serial RGB LED" H 9625 5575 60  0001 C CNN "Description"
 F 5 "5050" H 9625 5575 60  0001 C CNN "Package ID"
 F 6 "World Semi" H 9625 5575 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -469,6 +469,7 @@ F 0 "W2" H 3875 4495 50  0000 C CNN
 F 1 "TEST_1P" H 3875 4425 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4075 4225 50  0001 C CNN
 F 3 "" H 4075 4225 50  0000 C CNN
+F 4 "n" H 3875 4225 60  0001 C CNN "Required"
 	1    3875 4225
 	1    0    0    -1  
 $EndComp
@@ -480,6 +481,7 @@ F 0 "W3" H 4100 4720 50  0000 C CNN
 F 1 "TEST_1P" H 4100 4650 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4300 4450 50  0001 C CNN
 F 3 "" H 4300 4450 50  0000 C CNN
+F 4 "n" H 4100 4450 60  0001 C CNN "Required"
 	1    4100 4450
 	1    0    0    -1  
 $EndComp
@@ -629,6 +631,7 @@ F 0 "W4" H 5075 5145 50  0000 C CNN
 F 1 "TEST_1P" H 5075 5075 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5275 4875 50  0001 C CNN
 F 3 "" H 5275 4875 50  0000 C CNN
+F 4 "n" H 5075 4875 60  0001 C CNN "Required"
 	1    5075 4875
 	1    0    0    -1  
 $EndComp
@@ -657,6 +660,7 @@ F 0 "P4" H 8125 5775 50  0000 C CNN
 F 1 "CONN_01X03" V 8225 5575 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8125 5575 50  0001 C CNN
 F 3 "" H 8125 5575 50  0000 C CNN
+F 4 "n" H 8125 5575 60  0001 C CNN "Required"
 	1    8125 5575
 	-1   0    0    1   
 $EndComp

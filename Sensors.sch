@@ -38,7 +38,7 @@ F 4 "8-Bit I2C ADC" H 6775 4100 60  0001 C CNN "Description"
 F 5 "SO16" H 6775 4100 60  0001 C CNN "Package ID"
 F 6 "NXP" H 6775 4100 60  0001 C CNN "Manufacturer Name (MFN)"
 F 7 "PCF8591T" H 6775 4100 60  0001 C CNN "Manfr. Part Number (MFP)"
-F 8 "=HYPERLINK(" H 0   0   60  0001 C CNN "http://www.aliexpress.com/item/20pcs-lot-PCF8591T/32404198526.html"
+F 8 "http://www.aliexpress.com/item/20pcs-lot-PCF8591T/32404198526.html" H 0   0   60  0001 C CNN "Source1"
 F 9 "y" H 6775 4100 60  0001 C CNN "Required"
 	1    6775 4100
 	1    0    0    -1  
@@ -115,7 +115,7 @@ P 4450 2000
 F 0 "U1" H 4450 1900 60  0000 C CNN
 F 1 "phototransistor" H 4450 2300 60  0000 C CNN
 F 2 "Custom:SIDE-LED" H 4450 2000 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"http://webtest4.kingbright.com/attachments/file/psearch/000/00/00/KPA-3010P3C(Ver.16).pdf\"\", \"\"[LINK]\"\")" H 4450 2000 60  0001 C CNN
+F 3 "http://webtest4.kingbright.com/attachments/file/psearch/000/00/00/KPA-3010P3C(Ver.16).pdf" H 4450 2000 60  0001 C CNN
 F 4 "Side facing SMD infrared phototransistor" H 4450 2000 60  0001 C CNN "Description"
 F 5 "0603" H 4450 2000 60  0001 C CNN "Package ID"
 F 6 "Kingbright" H 4450 2000 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -131,7 +131,7 @@ P 4450 1325
 F 0 "D1" H 4450 1425 50  0000 C CNN
 F 1 "LED" H 4450 1225 50  0000 C CNN
 F 2 "Custom:SIDE-LED-REVERSED" H 4450 1325 50  0001 C CNN
-F 3 "=HYPERLINK(\"\"www.kingbright.com/attachments/file/psearch/000/00/20131112/KPA-3010F3C(Ver.15A).pdf\"\", \"\"[link]\"\")" H 4450 1325 60  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/20131112/KPA-3010F3C(Ver.15A).pdf" H 4450 1325 60  0001 C CNN
 F 4 "Side facing SMD infrared LED" H 4450 1325 60  0001 C CNN "Description"
 F 5 "0603" H 4450 1325 60  0001 C CNN "Package ID"
 F 6 "Kingbright" H 4450 1325 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -162,7 +162,7 @@ P 6275 2000
 F 0 "U2" H 6275 1900 60  0000 C CNN
 F 1 "phototransistor" H 6275 2300 60  0000 C CNN
 F 2 "Custom:SIDE-LED" H 6275 2000 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"http://webtest4.kingbright.com/attachments/file/psearch/000/00/00/KPA-3010P3C(Ver.16).pdf\"\", \"\"[LINK]\"\")" H 4450 2000 60  0001 C CNN
+F 3 "http://webtest4.kingbright.com/attachments/file/psearch/000/00/00/KPA-3010P3C(Ver.16).pdf" H 4450 2000 60  0001 C CNN
 F 4 "Side facing SMD infrared phototransistor" H 4450 2000 60  0001 C CNN "Description"
 F 5 "0603" H 4450 2000 60  0001 C CNN "Package ID"
 F 6 "Kingbright" H 4450 2000 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -209,8 +209,8 @@ P 4275 5025
 F 0 "SW1" H 4275 5275 60  0000 C CNN
 F 1 "COLLISION" H 4315 4775 59  0000 C CNN
 F 2 "Custom:LEVER_SWITCH" H 4275 5025 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/Lever-Button-Micro-Switch-long-lever/1888268351.html\"\", \"\"[LINK]\"\")" H 4275 5025 60  0001 C CNN
-F 4 "Long lever switch" H 4275 5025 60  0001 C CNN "Description"
+F 3 "https://www.aliexpress.com/item/Lever-Button-Micro-Switch-long-lever/1888268351.html" H 4275 5025 60  0001 C CNN
+F 4 "23mm Long lever switch" H 4275 5025 60  0001 C CNN "Description"
 F 5 "y" H 4275 5025 60  0001 C CNN "Required"
 	1    4275 5025
 	-1   0    0    1   
@@ -222,8 +222,8 @@ P 4275 4325
 F 0 "SW2" H 4275 4575 60  0000 C CNN
 F 1 "COLLISION" H 4315 4075 59  0000 C CNN
 F 2 "Custom:LEVER_SWITCH" H 4275 4325 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/Lever-Button-Micro-Switch-long-lever/1888268351.html\"\", \"\"[LINK]\"\")" H 4275 4325 60  0001 C CNN
-F 4 "Long lever switch" H 4275 5025 60  0001 C CNN "Description"
+F 3 "https://www.aliexpress.com/item/Lever-Button-Micro-Switch-long-lever/1888268351.html" H 4275 4325 60  0001 C CNN
+F 4 "23mm Long lever switch" H 4275 5025 60  0001 C CNN "Description"
 F 5 "y" H 4275 5025 60  0001 C CNN "Required"
 	1    4275 4325
 	-1   0    0    1   

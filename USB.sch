@@ -36,8 +36,9 @@ F 2 "Custom:SOT-23" H 7875 3275 50  0001 L CIN
 F 3 "" H 7675 3350 50  0000 L CNN
 F 4 "S8050 NPN Transistor" H 5675 2125 60  0001 C CNN "Description"
 F 5 "SOT-23" H 5675 2125 60  0001 C CNN "Package ID"
-F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 7675 3350 60  0001 C CNN "Source2"
-F 7 "y" H 5675 2125 60  0001 C CNN "Required"
+F 6 "Generic" H 7675 3350 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 7675 3350 60  0001 C CNN "Source2"
+F 8 "y" H 5675 2125 60  0001 C CNN "Required"
 	1    7675 3350
 	1    0    0    -1  
 $EndComp
@@ -51,8 +52,9 @@ F 2 "Custom:SOT-23" H 7875 4000 50  0001 L CIN
 F 3 "" H 7675 4075 50  0000 L CNN
 F 4 "S8050 NPN Transistor" H 5675 2125 60  0001 C CNN "Description"
 F 5 "SOT-23" H 5675 2125 60  0001 C CNN "Package ID"
-F 6 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 7675 4075 60  0001 C CNN "Source2"
-F 7 "y" H 5675 2125 60  0001 C CNN "Required"
+F 6 "Generic" H 7675 4075 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "http://www.aliexpress.com/item/New-original-3000PCS-8050-S8050-SOT-23-Plastic-Encapsulate-Transistors-NPN/1842327766.html" H 7675 4075 60  0001 C CNN "Source2"
+F 8 "y" H 5675 2125 60  0001 C CNN "Required"
 	1    7675 4075
 	1    0    0    1   
 $EndComp
@@ -164,7 +166,7 @@ P 5200 3775
 F 0 "U6" H 5225 4250 60  0000 C CNN
 F 1 "CH340G" H 5200 3300 60  0000 C CNN
 F 2 "SMD_Packages:SO-16-N" H 5300 3575 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF\"\", \"\"[LINK]\"\")" H 5300 3575 60  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF" H 5300 3575 60  0001 C CNN
 F 4 "USB to Serial Converter" H 5200 3775 60  0001 C CNN "Description"
 F 5 "SO-16" H 5200 3775 60  0001 C CNN "Package ID"
 F 6 "WCH" H 5200 3775 60  0001 C CNN "Manufacturer Name (MFN)"
@@ -231,7 +233,10 @@ F 0 "C2" H 4135 4795 50  0000 L CNN
 F 1 "22pF" H 4135 4645 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4125 4725 50  0001 C CNN
 F 3 "" H 4125 4725 50  0000 C CNN
-F 4 "y" H 4125 4725 60  0001 C CNN "Required"
+F 4 "22pF 0603 Capacitor" H 4125 4725 60  0001 C CNN "Description"
+F 5 "0603" H 4125 4725 60  0001 C CNN "Package ID"
+F 6 "Generic" H 4125 4725 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 4125 4725 60  0001 C CNN "Required"
 	1    4125 4725
 	1    0    0    -1  
 $EndComp
@@ -243,7 +248,10 @@ F 0 "C3" H 4685 4795 50  0000 L CNN
 F 1 "22pF" H 4685 4645 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4675 4725 50  0001 C CNN
 F 3 "" H 4675 4725 50  0000 C CNN
-F 4 "y" H 4675 4725 60  0001 C CNN "Required"
+F 4 "22pF 0603 Capacitor" H 4675 4725 60  0001 C CNN "Description"
+F 5 "0603" H 4675 4725 60  0001 C CNN "Package ID"
+F 6 "Generic" H 4675 4725 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 4675 4725 60  0001 C CNN "Required"
 	1    4675 4725
 	1    0    0    -1  
 $EndComp

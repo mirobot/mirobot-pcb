@@ -55,7 +55,7 @@ P 3825 3175
 F 0 "SW3" H 4050 3425 60  0000 C CNN
 F 1 "POWER_SWITCH" H 3865 2925 59  0000 C CNN
 F 2 "Custom:SMALL_SLIDE_SWITCH" H 3825 3175 60  0001 C CNN
-F 3 "=HYPERLINK(\"\"https://www.aliexpress.com/item/10Pcs-Toggle-switch-SK12D07VG3-stents-Small-toggle-switch-3-mm-high-Miniature-Slide-Switch-Side-Knob/32762894678.html\"\",\"\"[LINK]\"\")" H 3825 3175 60  0001 C CNN
+F 3 "https://www.aliexpress.com/item/10Pcs-Toggle-switch-SK12D07VG3-stents-Small-toggle-switch-3-mm-high-Miniature-Slide-Switch-Side-Knob/32762894678.html" H 3825 3175 60  0001 C CNN
 F 4 "SPDT Slide Switch R/A" H 3825 3175 60  0001 C CNN "Description"
 F 5 "Generic" H 3825 3175 60  0001 C CNN "Manufacturer Name (MFN)"
 F 6 "y" H 3825 3175 60  0001 C CNN "Required"
@@ -295,7 +295,11 @@ P 2775 3175
 F 0 "BATT1" H 2775 3375 50  0000 C CNN
 F 1 "BATT" V 2875 3175 50  0000 C CNN
 F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 2775 3175 50  0001 C CNN
-F 3 "" H 2775 3175 50  0000 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2775 3175 50  0000 C CNN
+F 4 "JST 3 Pin  Through Hole Top entry shrouded header socket" H 2775 3175 60  0001 C CNN "Description"
+F 5 "JST" H 2775 3175 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "B3B-PH-K-S" H 2775 3175 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 7 "y" H 2775 3175 60  0001 C CNN "Required"
 	1    2775 3175
 	-1   0    0    1   
 $EndComp
@@ -366,6 +370,7 @@ F 0 "W8" H 4325 3245 50  0000 C CNN
 F 1 "TEST_1P" H 4325 3175 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4525 2975 50  0001 C CNN
 F 3 "" H 4525 2975 50  0000 C CNN
+F 4 "n" H 4325 2975 60  0001 C CNN "Required"
 	1    4325 2975
 	1    0    0    -1  
 $EndComp
