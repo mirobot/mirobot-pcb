@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Mirobot)(type KiCad)(uri ${KIPRJMOD}/../lib/mirobot.pretty)(options "")(descr ""))
-)

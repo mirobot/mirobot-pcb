@@ -1,0 +1,404 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:custom-symbols
+LIBS:Mirobot-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR032
+U 1 1 56A07466
+P 3175 3550
+F 0 "#PWR032" H 3175 3300 60  0001 C CNN
+F 1 "GND" H 3175 3400 60  0000 C CNN
+F 2 "" H 3175 3550 60  0000 C CNN
+F 3 "" H 3175 3550 60  0000 C CNN
+	1    3175 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR033
+U 1 1 56A0746C
+P 5200 2925
+F 0 "#PWR033" H 5200 2775 60  0001 C CNN
+F 1 "VSS" H 5200 3075 60  0000 C CNN
+F 2 "" H 5200 2925 60  0000 C CNN
+F 3 "" H 5200 2925 60  0000 C CNN
+	1    5200 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_SPDT SW3
+U 1 1 56A07472
+P 3825 3175
+F 0 "SW3" H 4050 3425 60  0000 C CNN
+F 1 "POWER_SWITCH" H 3865 2925 59  0000 C CNN
+F 2 "Custom:SMALL_SLIDE_SWITCH" H 3825 3175 60  0001 C CNN
+F 3 "https://www.aliexpress.com/item/10Pcs-Toggle-switch-SK12D07VG3-stents-Small-toggle-switch-3-mm-high-Miniature-Slide-Switch-Side-Knob/32762894678.html" H 3825 3175 60  0001 C CNN
+F 4 "SPDT Slide Switch R/A" H 3825 3175 60  0001 C CNN "Description"
+F 5 "Generic" H 3825 3175 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "y" H 3825 3175 60  0001 C CNN "Required"
+	1    3825 3175
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG034
+U 1 1 56A07CE8
+P 3950 6375
+F 0 "#FLG034" H 3950 6470 30  0001 C CNN
+F 1 "PWR_FLAG" H 3950 6555 30  0000 C CNN
+F 2 "" H 3950 6375 60  0000 C CNN
+F 3 "" H 3950 6375 60  0000 C CNN
+	1    3950 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG035
+U 1 1 56A07CEE
+P 4350 6375
+F 0 "#FLG035" H 4350 6470 30  0001 C CNN
+F 1 "PWR_FLAG" H 4350 6555 30  0000 C CNN
+F 2 "" H 4350 6375 60  0000 C CNN
+F 3 "" H 4350 6375 60  0000 C CNN
+	1    4350 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG036
+U 1 1 56A07CF4
+P 4750 6375
+F 0 "#FLG036" H 4750 6470 30  0001 C CNN
+F 1 "PWR_FLAG" H 4750 6555 30  0000 C CNN
+F 2 "" H 4750 6375 60  0000 C CNN
+F 3 "" H 4750 6375 60  0000 C CNN
+	1    4750 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 56A07CFA
+P 4750 6550
+F 0 "#PWR037" H 4750 6300 60  0001 C CNN
+F 1 "GND" H 4750 6400 60  0000 C CNN
+F 2 "" H 4750 6550 60  0000 C CNN
+F 3 "" H 4750 6550 60  0000 C CNN
+	1    4750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR038
+U 1 1 56A07D00
+P 4350 6550
+F 0 "#PWR038" H 4350 6400 60  0001 C CNN
+F 1 "VSS" H 4350 6700 60  0000 C CNN
+F 2 "" H 4350 6550 60  0000 C CNN
+F 3 "" H 4350 6550 60  0000 C CNN
+	1    4350 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR039
+U 1 1 56A07D06
+P 3950 6550
+F 0 "#PWR039" H 3950 6400 60  0001 C CNN
+F 1 "+3V3" H 3950 6690 60  0000 C CNN
+F 2 "" H 3950 6550 60  0000 C CNN
+F 3 "" H 3950 6550 60  0000 C CNN
+	1    3950 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L LD1117S33CTR U8
+U 1 1 56A07F5E
+P 6200 3225
+F 0 "U8" H 6200 3475 50  0000 C CNN
+F 1 "LD1117S33CTR" H 6200 3425 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 6200 3325 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000544.pdf" H 6200 3225 50  0001 C CNN
+F 4 "3.3V Voltage Regulator" H 6200 3225 60  0001 C CNN "Description"
+F 5 "SOT-223" H 6200 3225 60  0001 C CNN "Package ID"
+F 6 "ST" H 6200 3225 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "LD1117S33CTR" H 6200 3225 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "http://www.aliexpress.com/item/high-quality-200PCS-AMS1117-3-3V-AMS1117-1117-3-3V-1A-Regulator-LDO-SOT-223-Special/32603003633.html" H 6200 3225 60  0001 C CNN "Source2"
+F 9 "y" H 6200 3225 60  0001 C CNN "Required"
+	1    6200 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 56A083CE
+P 6200 3800
+F 0 "#PWR040" H 6200 3550 60  0001 C CNN
+F 1 "GND" H 6200 3650 60  0000 C CNN
+F 2 "" H 6200 3800 60  0000 C CNN
+F 3 "" H 6200 3800 60  0000 C CNN
+	1    6200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR041
+U 1 1 56A0851B
+P 7400 2875
+F 0 "#PWR041" H 7400 2725 60  0001 C CNN
+F 1 "+3V3" H 7400 3015 60  0000 C CNN
+F 2 "" H 7400 2875 60  0000 C CNN
+F 3 "" H 7400 2875 60  0000 C CNN
+	1    7400 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 56A08564
+P 5575 3425
+F 0 "C6" H 5600 3525 50  0000 L CNN
+F 1 "10uF" H 5600 3325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5613 3275 50  0001 C CNN
+F 3 "" H 5575 3425 50  0000 C CNN
+F 4 "10uF 0805 SMD Capacitor" H 5575 3425 60  0001 C CNN "Description"
+F 5 "0805" H 5575 3425 60  0001 C CNN "Package ID"
+F 6 "Generic" H 5575 3425 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "http://www.aliexpress.com/item/2012-0805-106K-10UF-25V-250pcs-Original-authentic-and-new-Free-Shipping/32590605733.html" H 5575 3425 60  0001 C CNN "Source2"
+F 8 "y" H 5575 3425 60  0001 C CNN "Required"
+	1    5575 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 56A0859E
+P 6725 3425
+F 0 "C7" H 6750 3525 50  0000 L CNN
+F 1 "100uF" H 6750 3325 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 6763 3275 50  0001 C CNN
+F 3 "" H 6725 3425 50  0000 C CNN
+F 4 "100uF Tantalum Capacitor" H 6725 3425 60  0001 C CNN "Description"
+F 5 "3528" H 6725 3425 60  0001 C CNN "Package ID"
+F 6 "Generic" H 6725 3425 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 6725 3425 60  0001 C CNN "Required"
+	1    6725 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 56A085E0
+P 7075 3425
+F 0 "C8" H 7100 3525 50  0000 L CNN
+F 1 "10uF" H 7100 3325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7113 3275 50  0001 C CNN
+F 3 "" H 7075 3425 50  0000 C CNN
+F 4 "10uF 0805 SMD Capacitor" H 5575 3425 60  0001 C CNN "Description"
+F 5 "0805" H 5575 3425 60  0001 C CNN "Package ID"
+F 6 "Generic" H 5575 3425 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "http://www.aliexpress.com/item/2012-0805-106K-10UF-25V-250pcs-Original-authentic-and-new-Free-Shipping/32590605733.html" H 7075 3425 60  0001 C CNN "Source2"
+F 8 "y" H 5575 3425 60  0001 C CNN "Required"
+	1    7075 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 56A07D2B
+P 2275 6350
+F 0 "C1" H 2325 6450 50  0000 L CNN
+F 1 "470uF" H 2325 6250 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 2313 6200 30  0001 C CNN
+F 3 "" H 2275 6350 60  0000 C CNN
+F 4 "470uF Electrolytic Capacitor SMD" H 2275 6350 60  0001 C CNN "Description"
+F 5 "6.3x7.7" H 2275 6350 60  0001 C CNN "Package ID"
+F 6 "Generic" H 2275 6350 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "y" H 2275 6350 60  0001 C CNN "Required"
+	1    2275 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR042
+U 1 1 56A07D18
+P 2275 6025
+F 0 "#PWR042" H 2275 5875 60  0001 C CNN
+F 1 "VSS" H 2275 6175 60  0000 C CNN
+F 2 "" H 2275 6025 60  0000 C CNN
+F 3 "" H 2275 6025 60  0000 C CNN
+	1    2275 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR043
+U 1 1 56A07D0C
+P 2275 6700
+F 0 "#PWR043" H 2275 6450 60  0001 C CNN
+F 1 "GND" H 2275 6550 60  0000 C CNN
+F 2 "" H 2275 6700 60  0000 C CNN
+F 3 "" H 2275 6700 60  0000 C CNN
+	1    2275 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR044
+U 1 1 56B2F9C1
+P 3175 2850
+F 0 "#PWR044" H 3175 2700 60  0001 C CNN
+F 1 "+5V" H 3175 2990 60  0000 C CNN
+F 2 "" H 3175 2850 60  0000 C CNN
+F 3 "" H 3175 2850 60  0000 C CNN
+	1    3175 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 56B2FD56
+P 4675 3175
+F 0 "F1" H 4775 3225 50  0000 C CNN
+F 1 "1A" H 4575 3125 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" H 4675 3175 50  0001 C CNN
+F 3 "" H 4675 3175 50  0000 C CNN
+F 4 "1A Resettable fuse" H 4675 3175 60  0001 C CNN "Description"
+F 5 "1206" H 4675 3175 60  0001 C CNN "Package ID"
+F 6 "http://www.aliexpress.com/item/3000pcs-R429001WRM-429001-Fast-Acting-fuse-1206-1A-Marking-FH-ID387227/32600482167.html" H 4675 3175 60  0001 C CNN "Source2"
+F 7 "y" H 4675 3175 60  0001 C CNN "Required"
+	1    4675 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR045
+U 1 1 56B3E3A0
+P 4300 3550
+F 0 "#PWR045" H 4300 3300 60  0001 C CNN
+F 1 "GND" H 4300 3400 60  0000 C CNN
+F 2 "" H 4300 3550 60  0000 C CNN
+F 3 "" H 4300 3550 60  0000 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 BATT1
+U 1 1 59B7F792
+P 2775 3175
+F 0 "BATT1" H 2775 3375 50  0000 C CNN
+F 1 "BATT" V 2875 3175 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 2775 3175 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 2775 3175 50  0000 C CNN
+F 4 "JST 3 Pin  Through Hole Top entry shrouded header socket" H 2775 3175 60  0001 C CNN "Description"
+F 5 "JST" H 2775 3175 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "B3B-PH-K-S" H 2775 3175 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 7 "y" H 2775 3175 60  0001 C CNN "Required"
+	1    2775 3175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3175 3275 2975 3275
+Wire Wire Line
+	3175 3550 3175 3275
+Wire Wire Line
+	4300 3375 4300 3550
+Wire Wire Line
+	4225 3375 4300 3375
+Wire Wire Line
+	4425 3175 4225 3175
+Wire Wire Line
+	2275 6200 2275 6025
+Wire Wire Line
+	2275 6500 2275 6700
+Connection ~ 6725 3700
+Wire Wire Line
+	6725 3575 6725 3700
+Wire Wire Line
+	7075 3700 7075 3575
+Connection ~ 6200 3700
+Wire Wire Line
+	5575 3700 7075 3700
+Wire Wire Line
+	5575 3575 5575 3700
+Connection ~ 7075 3175
+Wire Wire Line
+	7075 3275 7075 3175
+Connection ~ 6725 3175
+Wire Wire Line
+	6725 3275 6725 3175
+Connection ~ 5575 3175
+Wire Wire Line
+	5575 3275 5575 3175
+Wire Wire Line
+	7400 3175 7400 2875
+Wire Wire Line
+	6600 3175 7400 3175
+Wire Wire Line
+	6200 3475 6200 3800
+Connection ~ 5200 3175
+Wire Wire Line
+	3950 6375 3950 6550
+Wire Wire Line
+	4350 6375 4350 6550
+Wire Wire Line
+	4750 6375 4750 6550
+Wire Wire Line
+	5200 3175 5200 2925
+Wire Wire Line
+	4925 3175 5800 3175
+Wire Wire Line
+	3425 3275 3425 3175
+Wire Wire Line
+	3425 3175 2975 3175
+Wire Wire Line
+	3175 2850 3175 3175
+Connection ~ 3175 3175
+Wire Wire Line
+	3425 3075 2975 3075
+$Comp
+L TEST_1P W8
+U 1 1 59B82FDC
+P 4325 2975
+F 0 "W8" H 4325 3245 50  0000 C CNN
+F 1 "TEST_1P" H 4325 3175 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 4525 2975 50  0001 C CNN
+F 3 "" H 4525 2975 50  0000 C CNN
+F 4 "n" H 4325 2975 60  0001 C CNN "Required"
+	1    4325 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 2975 4325 3175
+Connection ~ 4325 3175
+$Comp
+L TEST_1P W7
+U 1 1 59B831D2
+P 1725 6200
+F 0 "W7" H 1725 6470 50  0000 C CNN
+F 1 "TEST_1P" H 1725 6400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1925 6200 50  0001 C CNN
+F 3 "" H 1925 6200 50  0000 C CNN
+	1    1725 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR046
+U 1 1 59B83226
+P 1725 6425
+F 0 "#PWR046" H 1725 6175 60  0001 C CNN
+F 1 "GND" H 1725 6275 60  0000 C CNN
+F 2 "" H 1725 6425 60  0000 C CNN
+F 3 "" H 1725 6425 60  0000 C CNN
+	1    1725 6425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 6200 1725 6425
+$EndSCHEMATC
